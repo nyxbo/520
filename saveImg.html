@@ -1,0 +1,697 @@
+
+<!DOCTYPE html >
+<html style="font-size:50px">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no,viewport-fit=cover">
+    <title>我的2018关键词</title>
+    <style>
+
+        [v-clock]{display:none}
+        html,body{width:100%;height:100%;overflow:hidden;background:#23090c}
+        html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+        .app{position: relative;width: 100%;height: 100%;margin: 0 auto;}
+
+
+        .page1{position: absolute;background-color: #fff;width: 100%;height: 100%;top: 0;left: 0;}
+        .page1 .loading{position: absolute;width: 50%;height: 20%;top: 2.5rem;left: 50%;margin-left: -27%;z-index: 2;}
+        .loadpage{width: 100%;height:100%;position:absolute;top:0;left:0;z-index:9999;background:#2d1012}
+        .initLoading{width: 100%;height:100%;position: absolute;top:0; left:0; background:rgba(133, 105, 71, 1);}
+        .initLoading img,.loadpage img{width:100%;}
+        .initLoading .img-container,.loadpage .img-container{position: absolute; width: 1.32rem; height: 1.30rem; top: 30%; left: 50%; margin-left: -.66rem; animation:rotate 2s linear infinite; -webkit-animation:rotate 2s linear infinite;}
+        .initLoading p,.loadpage p{position: absolute; top:30%; margin-top: 1.70rem; font-size: .35rem; width: 100%; font-weight: bold; text-align: center;color:#fff;}
+        -webkit-keyframes rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)} 100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+        @keyframes rotate{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)} 100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}
+
+        #app{position:absolute;width: 100%;height:100%;overflow: hidden;}
+
+        .page1,.page2,.page5,.page3 {position: absolute;top: 0;left:0; width: 100%;height:100%;overflow: hidden;}
+        .initLoading {background:url(http://p3.ifengimg.com/a/2017/1229/bg-1.jpg) no-repeat;background-size:100% 100%;}
+        .initLoading .logo{width:3.16rem;height:.28rem;position:absolute;left:50%;margin-left:-1.58rem;bottom:.22rem;background:url(http://p3.ifengimg.com/a/2017/1229/pg2logo.png) no-repeat;background-size:100% 100%}
+        .initLoading .desc{width:1.27rem;height:0;position:absolute;left:50%;margin-left:-.635rem;top:4.32rem;transition: height 1s linear;-webkit-animation:height 1s 1.5s linear;-moz-animation:height 1s linear;overflow:hidden;}
+        .animate .desc {height: 3.21rem;}
+        .initLoading .start{opacity:0;border-radius:50%;width:3rem;height:3rem;position:absolute;bottom:1rem;left:50%;margin-left:-1.5rem;background:url(http://p3.ifengimg.com/a/2017/1229/start.png) no-repeat;background-size:100% 100%;-moz-animation:fadeIn 1s ease both;-webkit-animation:fadeIn 1s ease both;animation:fadeIn 1s ease both;}
+        .page1{background:#2e0c0c;}
+        .page2 {background: url(http://p3.ifengimg.com/a/2017/1229/codebg.jpg) no-repeat; background-size:100% 100%;}
+        .p2animate{opacity:0;
+            -moz-transform:translateY(100%);-ms-transform:translateY(100%);-webkit-transform:translateY(100%);transform:translateY(100%)
+        }
+        .page2 ul li{color:#000;height:.6rem;font-size:.5rem;text-align:center;line-height:.6rem;margin-top:.35rem}
+        .animate2 ul li:nth-child(1){-moz-animation:fadeInLeft .5s 1s ease both;-webkit-animation:fadeInLeft .5s 1s ease both;animation:fadeInLeft .5s 1s ease both}
+        .animate2 ul li:nth-child(2){-moz-animation:fadeInRight .5s 1.5s ease both;-webkit-animation:fadeInRight .5s 1.5s ease both;animation:fadeInRight .5s 1.5s ease both}
+        .animate2 ul li:nth-child(3){-moz-animation:fadeInLeft .5s 2s ease both;-webkit-animation:fadeInLeft .5s 2s ease both;animation:fadeInLeft .5s 2s ease both}
+        .animate2 ul li:nth-child(4){-moz-animation:fadeInRight .5s 2.5s ease both;-webkit-animation:fadeInRight .5s 2.5s ease both;animation:fadeInRight .5s 2.5s ease both}
+        .animate2 ul li:nth-child(5){-moz-animation:fadeInLeft .5s 3s ease both;-webkit-animation:fadeInLeft .5s 3s ease both;animation:fadeInLeft .5s 3s ease both}
+
+
+        .animate3 li:nth-child(1){-moz-animation:fadeInLeft .5s 0s ease both;-webkit-animation:fadeInLeft .5s 0s ease both;animation:fadeInLeft .5s 0s ease both}
+        .animate3 li:nth-child(2){-moz-animation:fadeInRight .5s 0.5s ease both;-webkit-animation:fadeInRight .5s 0.5s ease both;animation:fadeInRight .5s 0.5s ease both}
+        .animate3 li:nth-child(3){-moz-animation:fadeInLeft .5s 1s ease both;-webkit-animation:fadeInLeft .5s 1s ease both;animation:fadeInLeft .5s 1s ease both}
+        .animate3 li:nth-child(4){-moz-animation:fadeInRight .5s 1.5s ease both;-webkit-animation:fadeInRight .5s 1.5s ease both;animation:fadeInRight .5s 1.5s ease both}
+        .animate3 li:nth-child(5){-moz-animation:fadeInLeft .5s 2s ease both;-webkit-animation:fadeInLeft .5s 2s ease both;animation:fadeInLeft .5s 2s ease both}
+
+        .page2{
+            -moz-transition-property:-moz-transform,opacity;-o-transition-property:-o-transform,opacity;-webkit-transition-property:-webkit-transform,opacity;transition-property:transform,opacity;-moz-transition-duration:1s;-o-transition-duration:1s;-webkit-transition-duration:1s;transition-duration:1s;
+        }
+        .page2 ul li:nth-child(odd){float:left;}
+        .page2 ul li:nth-child(even){float:right;}
+        .page2 img {width:auto;height:.74rem;display:block;}
+        .page2 .navActive img{height:1.24rem}
+        .page2 .container {width:5.2rem; height:6.2rem;margin:3rem auto 0;}
+        .page2 .pg2title{width:5rem;height:1.31rem;position:absolute;left:50%;margin-left:-2.5rem;top:1.8rem;background:url(http://p3.ifengimg.com/a/2017/1229/pg2title.png) no-repeat;background-size:100% 100%}
+        .page2 .button {width:2.68rem; height:.85rem; position:absolute; bottom: 1.9rem; right:50%;margin-right:.13rem;background:url(http://p3.ifengimg.com/a/2017/1229/changeCode.png) no-repeat;background-size:100% 100%}
+        .page2 .submitBtn{width:2.68rem; height:.85rem; position:absolute; left:50%;margin-left:.13rem;bottom:1.9rem; background:url(http://p3.ifengimg.com/a/2017/1229/submitUp.png) no-repeat;background-size:100% 100%}
+        .page2 .navActive{height:1.24rem}
+        .page2 .p2logo{width:3.16rem;height:.28rem;position:absolute;left:50%;margin-left:-1.58rem;bottom:1.22rem;background:url(http://p3.ifengimg.com/a/2017/1229/pg2logo.png) no-repeat;background-size:100% 100%}
+
+        .page3 .super{position:absolute;top:0;left:0;width:100%;height:100%}
+        .page3 .userView{width:4.16rem;height:2.89rem;position:absolute;bottom:1.9rem;left:50%;margin-left:-2.08rem;z-index:9;background-position:0 -.2rem}
+        .page3 .makers{width:1.8rem;height:1.81rem;position:absolute;left:50%;margin-left:-.9rem;bottom:3.9rem;background:url(http://p3.ifengimg.com/a/2017/1229/makersbg.jpg) no-repeat;background-size:100% 100%;z-index:5;bottom:2.8rem;}
+        .page3 .userView .open{width:2.68rem;height:.85rem;background:url(http://p3.ifengimg.com/a/2017/1229/openBtn.png) no-repeat;background-size:100% 100%;margin:.01rem auto 0;}
+        .page3 .userView .rest{width:1.21rem;height:.33rem;background:url(http://p3.ifengimg.com/a/2017/1229/again.png) no-repeat;background-size:100% 100%;margin:.2rem auto 0;}
+        .page3 .userView .tip{width:3.07rem;height:.25rem;background:url(http://p3.ifengimg.com/a/2017/1229/tip.png) no-repeat;background-size:100% 100%;margin:.16rem auto 0;}
+
+        .page3 p{width:80%;margin:.4rem auto 0;font-size:.3rem;color:#fff;}
+        .page3 .rlogo{width:3.69rem;height:1.4rem;position:absolute;top:0;right:0;background:url(http://p3.ifengimg.com/a/2017/1229/rLogo.png) no-repeat;background-size:1.56rem .67rem;z-index:19;background-position:center center;background-color:#23090c;}
+        .page3 .maker{position:absolute;width:100%;height:100%;z-index:99}
+        .page3 .maker .makerbg{position:absolute;width:100%;height:100%;background:#23090c;opacity:1}
+        .page3 .maker .openImg{position:absolute;top:1.22rem;width:6.84rem;height:10.43rem;left:50%;margin-left:-3.5rem}
+        .page3 .maker .openImg img{width:6.84rem;height:10.43rem;display:block;}
+        .page3 .maker .close{width:.61rem;height:.61rem;position:absolute;background:url(http://p3.ifengimg.com/a/2017/1229/close.png) no-repeat;background-size:100% 100%;top:1.02rem;right:1.55rem;}
+
+        .animateStop{animation-play-state:paused}
+
+        /*amation*/
+        @-webkit-keyframes tada{
+            from {
+                transform: scale3d(1, 1, 1);
+            }
+
+            2%, 4% {
+                transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+            }
+
+            3%, 5%, 7%, 9% {
+                transform: scale3d(1.3, 1.3, 1.3) rotate3d(0, 0, 1, 3deg);
+            }
+
+            4%, 6%, 8% {
+                transform: scale3d(1.3, 1.3, 1.3) rotate3d(0, 0, 1, -3deg);
+            }
+
+            11%{
+                transform: scale3d(1, 1, 1) rotate3d(0, 0, 0,0deg);
+            }
+
+            to {
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        @keyframes tada{
+            from {
+                transform: scale3d(1, 1, 1);
+            }
+
+            2%, 4% {
+                transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+            }
+
+            3%, 5%, 7%, 9% {
+                transform: scale3d(1.3, 1.3, 1.3) rotate3d(0, 0, 1, 3deg);
+            }
+
+            4%, 6%, 8% {
+                transform: scale3d(1.3, 1.3, 1.3) rotate3d(0, 0, 1, -3deg);
+            }
+
+            11%{
+                transform: scale3d(1, 1, 1) rotate3d(0, 0, 0,0deg);
+            }
+
+            to {
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeInUp{
+            from {
+                opacity: 0;
+                transform: translate3d(0, 100%, 0);
+                -webkit-transform:translate3d(0, 100%, 0);
+                -moz-transform:translate3d(0, 100%, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+                -webkit-transform:translate3d(0, 0, 0);
+                -moz-transform:translate3d(0, 0, 0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 100%, 0);
+                -webkit-transform:translate3d(0, 100%, 0);
+                -moz-transform:translate3d(0, 100%, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+                -webkit-transform:translate3d(0, 0, 0);
+                -moz-transform:translate3d(0, 0, 0);
+            }
+        }
+
+        @-webkit-keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translate3d(100%, 0, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translate3d(100%, 0, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @-webkit-keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translate3d(-100%, 0, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translate3d(-100%, 0, 0);
+                -webkit-transform: translate3d(-100%, 0, 0);
+                -moz-transform:translate3d(-100%, 0, 0);
+
+            }
+
+            to {
+
+                opacity: 1;
+                transform: none;
+                -webkit-transform:none;
+                -moz-transform:none;
+            }
+        }
+
+
+        @-webkit-keyframes title2Hide
+        {100%{-webkit-transform:translateY(200%);transform:translateY(200%);opacity:0}}@keyframes title2Hide{100%{-moz-transform:translateY(200%);-ms-transform:translateY(200%);-webkit-transform:translateY(200%);transform:translateY(200%);opacity:0}}
+    </style>
+    <script type="text/javascript">
+        var gloableSettings = {
+            "ch": "",
+            "domain": "m.ifeng.com",
+            "channelPath": "/",
+            "pt":""
+        };
+    </script>
+
+</head>
+<body>
+<div class="app" id="app" v-cloak>
+    <div class="loadpage" v-if="loadingpage">
+        <div class="img-container">
+            <img src="https://p2.ifengimg.com/29b92e35b2b20708/2017/6/ifeng.png"/>
+        </div>
+        <p>正在加载中...<span v-text="loadNum"></span>
+    </div>
+    <div class="initLoading anim" v-bind:class={animate:animate1} v-if="initLoading">
+        <div class="logo"></div>
+        <div class="desc">
+            <img src="http://p3.ifengimg.com/a/2017/1229/loadtext.png" alt="">
+        </div>
+        <div v-if = "btnShow" class="start" @click="getStart"></div>
+    </div>
+    <div class="page1 initLoading" v-if="show == 'page1'">
+        <div class="img-container">
+            <img src="https://p2.ifengimg.com/29b92e35b2b20708/2017/6/ifeng.png"/>
+        </div>
+        <p>正在生关键词...</p>
+    </div>
+    <transition enter-class="p2animate">
+
+        <div class="page2" v-show="show == 'page2'">
+            <div class="pg2title"></div>
+            <div class="container" id="container" v-bind:class="{animate2:animate2,animateStop:animateStop}">
+                <ul :class="{animate3:animate3,animateStop:animateStop}">
+                    <li v-for = "(item,index) in hotCode[num]" :class="{ navActive:active==index }" :style = "{'top':index*0.45 +'rem'}" @click="changeNav(index)">
+                        <img :src="item.iscur?'http://p3.ifengimg.com/a/2017/1229/'+item.cur:'http://p3.ifengimg.com/a/2017/1229/'+item.normal" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="button" @click="getArray"></div>
+            <div class="submitBtn" @click="show3"></div>
+            <div class="p2logo"></div>
+        </div>
+    </transition>
+    <div class="page3" v-if = "show == 'page3'">
+        <div class="rlogo"></div>
+        <div class="makers">
+
+        </div>
+        <div class="userView"  v-if = "userViewShow">
+            <div class="open" @click = "openPage"></div>
+            <div class="rest" @click="checkName"></div>
+            <div class="tip"></div>
+        </div>
+        <img src="" alt="" ref = "super" class="super">
+        <div class="maker" v-if = "makershow" @click = "closepage">
+            <div class="makerbg" ></div>
+            <div class="openImg">
+                <img src="" alt="" ref = 'openimg'>
+            </div>
+            <div class="close"></div>
+        </div>
+    </div>
+</div>
+<script src="https://y0.ifengimg.com/base/jQuery/jquery-1.9.1.min.js"></script>
+<script src="https://p2.ifengimg.com/29b92e35b2b20708/2017/6/vue.min.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+
+    var app = new Vue({
+        el: "#app",
+        data:function(){
+            return {
+                show: '',
+                btnShow:false,
+                screenSrc: '',
+                loading: true,
+                initLoading: false,
+                loadNum: 0,
+                shareUrl: 'https://m.ifeng.com/iphone8',
+                start:false,
+                page3Bg:'',
+                makershow:false,
+                userViewShow:true,
+                loadingpage:true,
+                p2animate:true,
+                hotCode:[
+                    [
+                        {'iscur':false,'normal':'tag1.png','cur':'tagcur1.png'},
+                        {'iscur':false,'normal':'tag2.png','cur':'tagcur2.png'},
+                        {'iscur':false,'normal':'tag3.png','cur':'tagcur3.png'},
+                        {'iscur':false,'normal':'tag4.png','cur':'tagcur4.png'},
+                        {'iscur':false,'normal':'tag5.png','cur':'tagcur5.png'}
+                    ],
+                    [
+                        {'iscur':false,'normal':'tag6.png','cur':'tagcur6.png'},
+                        {'iscur':false,'normal':'tag7.png','cur':'tagcur7.png'},
+                        {'iscur':false,'normal':'tag8.png','cur':'tagcur8.png'},
+                        {'iscur':false,'normal':'tag9.png','cur':'tagcur9.png'},
+                        {'iscur':false,'normal':'tag10.png','cur':'tagcur10.png'}
+                    ],
+                    [
+                        {'iscur':false,'normal':'tag11.png','cur':'tagcur11.png'},
+                        {'iscur':false,'normal':'tag12.png','cur':'tagcur12.png'},
+                        {'iscur':false,'normal':'tag13.png','cur':'tagcur13.png'},
+                        {'iscur':false,'normal':'tag14.png','cur':'tagcur14.png'},
+                        {'iscur':false,'normal':'tag15.png','cur':'tagcur15.png'}
+                    ],
+                    [
+                        {'iscur':false,'normal':'tag16.png','cur':'tagcur16.png'},
+                        {'iscur':false,'normal':'tag17.png','cur':'tagcur17.png'},
+                        {'iscur':false,'normal':'tag18.png','cur':'tagcur18.png'},
+                        {'iscur':false,'normal':'tag5.png','cur':'tagcur5.png'},
+                        {'iscur':false,'normal':'tag10.png','cur':'tagcur10.png'}
+                    ]
+                ],
+                hotCode2:[
+                    [
+                        {'img':'down1.jpg','openImg':'open1.png','title':'好运连连','icon':'icon-01.jpg'},
+                        {'img':'down2.jpg','openImg':'open2.png','title':'结婚生子','icon':'icon-02.jpg'},
+                        {'img':'down3.jpg','openImg':'open3.png','title':'出国旅游','icon':'icon-03.jpg'},
+                        {'img':'down4.jpg','openImg':'open4.png','title':'偶遇爱豆','icon':'icon-04.jpg'},
+                        {'img':'down5.jpg','openImg':'open5.png','title':'减肥成功','icon':'icon-05.jpg'}
+
+                    ],
+                    [
+                        {'img':'down6.jpg','openImg':'open6.png','title':'学业有成','icon':'icon-06.jpg'},
+                        {'img':'down7.jpg','openImg':'open7.png','title':'贵人相助','icon':'icon-07.jpg'},
+                        {'img':'down8.jpg','openImg':'open8.png','title':'等待时机','icon':'icon-08.jpg'},
+                        {'img':'down9.jpg','openImg':'open9.png','title':'身体健康','icon':'icon-09.jpg'},
+                        {'img':'down10.jpg','openImg':'open10.png','title':'如鱼得水','icon':'icon-10.jpg'}
+
+                    ],
+                    [
+                        {'img':'down11.jpg','openImg':'open11.png','title':'追到男神','icon':'icon-11.jpg'},
+                        {'img':'down12.jpg','openImg':'open12.png','title':'又瘦又美','icon':'icon-12.jpg'},
+                        {'img':'down13.jpg','openImg':'open13.png','title':'顺利脱单','icon':'icon-13.jpg'},
+                        {'img':'down14.jpg','openImg':'open14.png','title':'升职加薪','icon':'icon-14.jpg'},
+                        {'img':'down15.jpg','openImg':'open15.png','title':'女神表白','icon':'icon-15.jpg'}
+                    ],
+                    [
+                        {'img':'down16.jpg','openImg':'open16.png','title':'买房买车','icon':'icon-16.jpg'},
+                        {'img':'down17.jpg','openImg':'open17.png','title':'咸鱼翻身','icon':'icon-17.jpg'},
+                        {'img':'down18.jpg','openImg':'open18.png','title':'一夜暴富','icon':'icon-18.jpg'},
+                        {'img':'down5.jpg','openImg':'open5.png','title':'减肥成功','icon':'icon-05.jpg'},
+                        {'img':'down10.jpg','openImg':'open10.png','title':'如鱼得水','icon':'icon-10.jpg'}
+                    ]
+                ],
+                num:0,
+                active:Number,
+                onNav:false,
+                navCur:'',
+                prefix:'http://p3.ifengimg.com/a/2017/1229/',
+                animate1:false,
+                animate2:true,
+                animate3:false,
+                animateStop:false,
+                arrShare:['好运连连','http://p3.ifengimg.com/a/2017/1229/icon-01.jpg']
+            }
+        },
+        mounted: function() {
+            this.loadImg();
+            this.getWeiXin();
+            this.resize()
+            window.onresize = this.resize
+            window.onorientationchange = this.resize;
+            window.addEventListener("touchmove", function (e) {e.preventDefault();},{ passive: false });
+        },
+        methods: {
+            resize:function(e){
+                var _this = this;
+                _this.ua = navigator.userAgent.toLowerCase();
+                _this.isMobile = /ipad|iphone|ipod|ios|android|symbianos|windows phone|miuibrowser|meego|blackberry/i.test(_this.ua) || !!navigator.userAgent.match(/AppleWebKit.*Mobile.*/);
+                _this.isIos = /ipad|iphone|ipod|ios/i.test(_this.ua);
+                var setTime = 1000/60;
+                if(e&&e.type==='orientationchange')setTime = 500;
+                setTimeout(function () {
+                    _this.width = document.body.offsetWidth;
+                    _this.height = window.innerHeight;
+                    if (!_this.isMobile) {
+                        if (_this.width / _this.height < 750 / 1206){
+                            _this.height = _this.width / 750 * 1206;
+                            _this.scale = _this.height/window.innerHeight;
+                        }
+                        else {
+                            _this.width = _this.height / 1206 * 750;
+                            _this.scale = _this.width/document.body.offsetWidth;
+                        }
+                        _this.left = (window.innerWidth - _this.width) / 2;
+                        _this.bottom = (window.innerHeight - _this.height) / 2;
+
+                    }
+                    else {
+                        if (_this.width / _this.height < 750 / 1206){
+                            _this.height = _this.width / 750 * 1206;
+                            _this.scale = _this.height/window.innerHeight;
+                        }
+                        else {
+                            _this.width = _this.height / 1206 * 750;
+                            _this.scale = _this.width/document.body.offsetWidth;
+                        }
+                        _this.left = (window.innerWidth - _this.width) / 2;
+                        _this.bottom = (window.innerHeight - _this.height) / 2;
+                    }
+                    _this.fontSize = Math.round(_this.width / 750 * 100);
+                    document.documentElement.style.fontSize = _this.fontSize + 'px';
+                    $('#app').css('width',_this.width)
+                    $('#app').css('height',_this.height)
+                    $('#app').css('left',_this.left)
+                    $('#app').css('bottom',_this.bottom)
+                    console.log()
+                },setTime);
+            },
+            getStart:function(){
+                this.start = true
+                this.initLoading = false;
+                this.sendTz('y_open')
+                this.show = 'page2';
+                this.p2animate = true
+            },
+            checkName:function(){
+                this.show = 'page1';
+                this.loading = true;
+                this.arrShare[0] = '好运连连'
+                this.arrShare[1] = 'http://p3.ifengimg.com/a/2017/1229/icon-01.jpg'
+                this.getWeiXin()
+                var self = this;
+                this.$nextTick(function(){
+                    this.show= 'page2';
+                    this.animate2 = true
+                })
+                this.num ++
+                if(this.num > this.hotCode.length - 1){
+                    this.num = 0
+                }
+                this.active = Number
+                this.onNav = false
+                this.sendTz('y_reset')
+
+            },
+            makePic:function(){
+                this.show = 'page1'
+
+                var ary = [this.prefix + this.hotCode2[this.num][this.active].img,this.prefix + this.hotCode2[this.num][this.active].openImg]
+
+                this.arrShare[0] = this.hotCode2[this.num][this.active].title;
+                this.arrShare[1] = this.prefix + this.hotCode2[this.num][this.active].icon
+                this.getWeiXin();
+                var oImg = new Image();
+                ary.forEach(function(item,index) {
+                    var oImg = new Image();
+                    oImg.src = ary[index];
+                    oImg.onload = load;
+                })
+                var num = 0;
+                var self = this;
+
+
+                function load() {
+                    num ++
+                    self.loadNum = parseInt(num / ary.length * 100) + "%";
+                    if (num == ary.length) {
+                        self.show = 'page3'
+                        self.$nextTick(function(){
+                            self.$refs.super.setAttribute('src',ary[0])
+
+                        })
+
+                    }
+
+                };
+
+            },
+            openPage:function(){
+                var ary = [this.prefix + this.hotCode2[this.num][this.active].img,this.prefix + this.hotCode2[this.num][this.active].openImg]
+                this.makershow = true;
+                this.$nextTick(function(){
+                    this.$refs.openimg.setAttribute('src',ary[1])
+                })
+                this.sendTz('y_jiedu')
+            },
+            closepage:function(){
+                this.$nextTick(function(){
+                    this.$refs.openimg.setAttribute('src','')
+                })
+                this.makershow = false;
+
+            },
+            getArray:function(){
+                this.animate2 = false
+                this.animate3 = false
+                this.num ++
+                if(this.num > this.hotCode.length - 1){
+                    this.num = 0
+                }
+                this.active = Number
+                this.onNav = false
+                this.sendTz('y_change')
+                console.log(this.num)
+            },
+            changeNav:function(index){
+                this.onNav = true
+                this.active = index
+                this.hotCode[this.num].forEach(function(item,index){
+                    item.iscur = false
+                })
+                this.hotCode[this.num][index].iscur = true
+            },
+            show3:function(){
+                if(this.onNav){
+                    this.makePic()
+                }else{
+                    alert('请选择一个标签')
+                }
+                this.sendTz('y_submit')
+            },
+            loadImg: function() {
+                var ary = [];
+                var arybg = ['bg-1.jpg','changeCode.png','codebg.jpg','submitUp.png','start.png','loadtext.png','pg2logo.png']
+                for(var i=0;i<this.hotCode.length;i++){
+                    for(var j=0;j<this.hotCode[i].length;j++){
+                        var hotCur = this.hotCode[i][j].cur
+                        var hotNormal = this.hotCode[i][j].normal
+                        ary.push(this.prefix+hotNormal,this.prefix+hotCur)
+                    }
+                }
+
+                for(var i=0;i<arybg.length;i++){
+                    ary.push(this.prefix+arybg[i])
+                }
+
+                console.log(ary)
+                ary.forEach(function(item) {
+                    var oImg = new Image();
+                    oImg.src =  item;
+                    oImg.onload = load;
+                })
+                var num = 0;
+                var self = this;
+                function load(){
+                    num ++
+                    self.loadNum = parseInt(num / ary.length * 100) + "%";
+                    if (num == ary.length) {
+                        self.loadingpage = false
+                        self.initLoading = true
+                        setTimeout(function(){
+                            self.animate1 = true
+                        },100)
+                        setTimeout(function(){
+                            self.btnShow = true
+                        },1600)
+                    }
+                }
+            },
+            mfp_getCookie:function(c_name) {
+                var start = document.cookie.indexOf( c_name + "=");
+                if ( start == -1 ) { return ""; }
+                start = start + c_name.length+1;
+                var end = document.cookie.indexOf(";",start);
+                if (end == -1) { end = document.cookie.length; }
+                return decodeURIComponent( document.cookie.substring(start,end) );
+            },
+            getUserid:function(){
+                return this.mfp_getCookie("userid");
+            },
+            getSid:function(){
+                return this.mfp_getCookie("sid");
+            },
+            getScript:function(src, callback) {
+                var head = document.getElementsByTagName("head")[0];
+                var js = document.createElement("script");
+                js.setAttribute("src", src);
+                js.onload = js.onreadystatechange = function() {
+                    if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+                        head.removeChild(js);
+                        if (callback) callback();
+                    }
+                }
+                head.appendChild(js);
+            },
+            sendTz:function(value){
+                var tanzhen = "http://stadig.ifeng.com/actsta.js?datatype=wap_act&value="+value+"&uri="+encodeURIComponent(window.location.href)+"&ref="+encodeURIComponent(window.location.href)+"&uid="+encodeURIComponent(this.getUserid())+"&sid="+encodeURIComponent(this.getSid())+"&time="+encodeURIComponent(new Date().valueOf())+"&ci="+encodeURIComponent(gloableSettings.channelPath)
+                this.getScript( tanzhen );
+            },
+            getWeiXin: function() {
+                var shareIcon = this.arrShare[1],
+                    shareTitle = '我的2018关键词是#' + this.arrShare[0]+'#',
+                    shareContent = '一夜暴富or顺利脱单，你的关键词是什么？',
+                    shareLink = window.location.href;
+                console.log(shareIcon,shareTitle)
+
+                if(/MicroMessenger/.test(navigator.userAgent)) {
+
+                    var wxConfigParams = {};
+                    $.ajax({
+                        url: 'https://api.3g.ifeng.com/weishare_token_api',
+                        type: 'get',
+                        dataType: 'jsonp',
+                        data: { url: shareLink },
+                        success: function (data) {
+                            wxConfigParams.debug = false;
+                            wxConfigParams.appId = data.appId;
+                            wxConfigParams.timestamp = data.timestamp;
+                            wxConfigParams.nonceStr = data.nonceStr;
+                            wxConfigParams.signature = data.signature;
+                            wxConfigParams.jsApiList = ['onMenuShareAppMessage','onMenuShareTimeline','onMenuShareQQ','onMenuShareQZone'];
+                            wx.config(wxConfigParams);
+                            wx.ready(function () {
+                                wx.onMenuShareAppMessage({
+                                    title: shareTitle,
+                                    imgUrl: shareIcon,
+                                    link: shareLink,
+                                    desc: shareContent
+                                });
+                                wx.onMenuShareTimeline({
+                                    title: shareTitle,
+                                    link: shareLink,
+                                    imgUrl: shareIcon
+                                });
+                                wx.onMenuShareQZone({
+                                    title: shareTitle,
+                                    desc: shareContent,
+                                    link: shareLink,
+                                    imgUrl: shareIcon
+                                });
+                                wx.onMenuShareQQ({
+                                    title: shareTitle,
+                                    desc: shareContent,
+                                    link: shareLink,
+                                    imgUrl: shareIcon
+                                });
+                            });
+                        },
+                        error: function (data) {
+                        }
+                    });
+                }
+            }
+        }
+    })
+</script>
+<script src="https://p1.ifengimg.com/a/2016/0809/sta_collection_common_iifeng_v4.js"></script>
+<script src="https://p3.ifengimg.com/a/2017/0329/sta_collection_iifeng_pv_v8.js"></script>
+</body>
+</html>
+

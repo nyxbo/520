@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>凤凰新闻</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link href="https://unpkg.com/animate.css@3.5.1/animate.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://y0.ifengimg.com/base/jQuery/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://p2.ifengimg.com/29b92e35b2b20708/2016/30/head.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="http://p0.ifengimg.com/a/2017/0125/shareweixin_20170125.js"></script>
+    <script src="http://h1.ifengimg.com/f3a90b93df336b6f/2013/0704/device.js"></script>
+    <script src="http://h0.ifengimg.com/20150625/fa.min.js"></script>
+</head>
+<style>
+    /*reset*/
+    @charset "UTF-8";
+    * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+    html{background-color: #fff;height:100%;overflow:hidden;}
+    html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr, input, textarea{
+        margin: 0; padding: 0; border: 0; list-style: none; outline: 0;
+    }
+    address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+        display: block;
+    }
+    body{background-repeat: no-repeat; background-position: center top;background-image: none;Font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+        margin: 0 auto; text-align:left;
+        line-height: 1.6; background:#efefef;height:100%;overflow:hidden;-webkit-tap-highlight-color: transparent;-webkit-user-select:none}
+    a{-webkit-tap-highlight-color: transparent;-webkit-user-select:none}
+    img { max-width: 100%; border:none; height: auto; width: auto }
+    a:hover{text-decoration: none;}
+    [v-cloak] {display:none}
+    #global {width:100%; height:100%;}
+    #page1 {width:100%; height:100%; background:#5699ea;}
+    #page1 .bigNews {width:7.5rem; height:7.93rem; position: absolute;top: .6rem; left:0;}
+    #page1 .bottom {width: 2.52rem; height: .50rem; position: absolute; bottom: .47rem; left: 50%; margin-left: -1.26rem; }
+    #page1 .sex-container {position: absolute; bottom: 3.86rem; width: 100%; height:.33rem;font-size: .28rem;width:2.2rem;margin-left:2.66rem}
+    #page1 .sex-container span {display: inline-block; background:url('http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_3.png') no-repeat; width: .33rem; height: 100%; background-size: contain; padding-left: .45rem; line-height: .33rem;font-size:.35rem;color:#fff;font-weight:bold;}
+    #page1 .sex-container span.man{}
+    #page1 .sex-container span.woman {margin-left:.8rem}
+    #page1 .sex-container span.active {background:url('http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_4.png') no-repeat; background-size: contain;}
+    #page1 .button-group {position: absolute; bottom: 1.67rem; width: 100%; height: 2rem;}
+    #page1 .button-group span { display: block; height: 1rem; width:3.55rem; margin: 0 auto;}
+    #page1 .button-group span.input-name { background:url('http://p1.ifengimg.com/29b92e35b2b20708/2017/4/name_i.png') no-repeat; background-size:100% 100%; margin-bottom: .23rem; position: relative;}
+    #page1 .button-group span.input-name input {position: absolute; background:#fff; background-size:100% 100%; top: .3rem; bottom: .2rem; left: .28rem; width: 3rem; text-align: center; font-size: .35rem; font-weight: bold;color:#4f92e4}
+    #page1 .button-group span.create-new { background:url('http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_1.png') no-repeat; background-size:100% 100%; height: 1rem; margin-top: -.07rem; }
+    #page2 { position: absolute; top: 0; width:100%; height:100%; background:url('http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_bg2.png') repeat 0 0; overflow: scroll;background-size:cover}
+    #page2 .newsbg {width: 5.58rem; height: 5.08rem; margin:1.21rem auto 0;display:block}
+    #page2 article {font-size: .34rem; color: #4d4d4d; }
+    #page2 .button-group {width: 100%; height: 2rem; margin-top:2.2rem;}
+    #page2 .button-group span { display: block; height:1rem; width:3.55rem; margin: 0 auto;}
+    #page2 .button-group span.make-show { background:url('http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_5.png') no-repeat; background-size:100% 100%;}
+    #page2 .button-group span.create-new { background:url('http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_1.png') no-repeat; background-size:100% 100%; height: 1rem; margin-top: -.07rem; }
+    #page2 .bottom {width: 2.52rem; height: .50rem; position: absolute; bottom: .47rem; left: 50%; margin-left: -1.26rem; }
+    #page3 { position: absolute; top: 0; width:100%; height:100%; background:url('http://p3.ifengimg.com/29b92e35b2b20708/2017/4/erweimabg.png') no-repeat; background-size:100% 100%;}
+    #page3 .codeContainer {background-size:100% 100%; width: 1.84rem; height: 2.67rem; position: absolute;top:6.4rem; left: 2.83rem; text-align: center;display:block}
+    #page3 img {width: 100%; height: 100%}
+</style>
+<body>
+
+<script>
+
+    function getground(){
+        if(typeof(ground) != 'undefined'){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    setTimeout(function(){
+        var isApp = getground();
+        if(isApp){
+
+        }else{
+
+            var stadigurl = "http://stadig.ifeng.com/appsta.js?datatype=newsappsns&mos=iphone&userkey=06e9e3a52e316b436a3343eaa5db30de&ua=&share=unknown&session="
+
+            // 时间格式化
+            function getNowFormatDate(){
+                var date = new Date();
+                var seperator1 = "-";
+                var seperator2 = ":";
+                var month = date.getMonth() + 1;
+                var strDate = date.getDate();
+                if (month >= 1 && month <= 9) {
+                    month = "0" + month;
+                }
+                if (strDate >= 0 && strDate <= 9) {
+                    strDate = "0" + strDate;
+                }
+                var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+                    + "+" + date.getHours() + seperator2 + date.getMinutes()
+                    + seperator2 + date.getSeconds();
+
+                return currentdate;
+            }
+            var timeStr = getNowFormatDate()
+            var url = encodeURIComponent('http://share.iclient.ifeng.com/keyWord2017');
+            var session = timeStr+'#page#type=h5$id=h5_keyWord2017_0$url='+url;
+            session = encodeURIComponent(session)
+
+            var Rourl = stadigurl+session
+            $('body').append('<img src="' + Rourl + '" alt="" style="display:none;" class="t_type" />');
+            console.log(Rourl)
+
+        }
+    },500)
+
+</script>
+<script>
+    (function (doc, win) {
+        var _root = doc.documentElement,
+            resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            resizeCallback = function () {
+                var clientWidth = _root.clientWidth,
+                    fontSize = 10*10;
+                if (!clientWidth) return;
+                if(clientWidth < 1080) {
+                    fontSize = 100*(clientWidth / 750);
+                } else {
+                    fontSize = 100*(1080 / 750);
+                }
+                _root.style.fontSize = fontSize + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvent, resizeCallback, false);
+        doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+    })(document, window);
+</script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="http://p0.ifengimg.com/29b92e35b2b20708/2016/51/filter.js"></script>
+<section id="global" v-cloak>
+    <div id='page1' v-if="isPage1">
+        <img src="http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_2.png" class="bigNews">
+        <div class="sex-container">
+            <span class="man" :class="{ active: sex === 'man' }" @click="choose('man')">男</span>
+            <span class="woman" :class="{ active: sex === 'woman' }" @click="choose('woman')">女</span>
+        </div>
+        <div class="button-group">
+          <span class="input-name" @click="showInput">
+            <input type="text" v-show="isShowInput" v-model="name" autofocus>
+          </span>
+            <span class="create-new" @click="checkName"></span>
+        </div>
+        <img src="http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_logo.png" class="bottom">
+    </div>
+    <div id='page2' v-if="isPage2">
+        <img :src="newsData.image || image" class="newsbg"/>
+        <div class="button-group">
+            <span class="create-new" @click="reload"></span>
+            <span class="make-show" @click="makeShow(1)" v-if ="isShow4"></span>
+        </div>
+        <img src="http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_logo.png" class="bottom">
+        <!--微信分享-->
+        <div id="ifeng_share_thumbnail" style="display: none;">http://p0.ifengimg.com/29b92e35b2b20708/2017/4/300x300.png</div>
+        <div id="ifeng_share_title" style="display: none;" v-text="name+'的2017年新闻关键词是'+newsData.title"></div>
+        <div id="ifeng_share_description" style="display: none;">厉害了我的2017！不服来战！</div>
+        <div id="ifeng_share_url" style="display: none;" v-text="url"></div>
+    </div>
+    <div id="page3" v-if="isPage3" @click="makeShow(0)">
+        <div class="codeContainer">
+            <img src="http://p3.ifengimg.com/29b92e35b2b20708/2017/4/erweima.png"/>
+        </div>
+    </div>
+</section>
+
+<script>
+    var NEWUrl = '';
+    var TITLE = '';
+    var isApps = true;
+
+    function getground(){
+        if(typeof(ground) != 'undefined'){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+
+    setTimeout(function(){
+        var isApp = getground();
+        if(isApp){
+            isApps = false;
+        }
+    },500)
+
+
+
+    var DATA = {
+        man: [{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_b1.png',
+            title:'前女友'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_b2.png',
+            title:'美国总统'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_b3.png',
+            title:'种子'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_b4.png',
+            title:'新垣结衣'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_b5.png',
+            title:'世界第一'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_b6.png',
+            title:'环游世界'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_s1.png',
+            title:'一夜暴富'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_s2.png',
+            title:'二胎'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_s3.png',
+            title:'震惊'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_s4.png',
+            title:'一个亿'
+        }],
+        woman: [{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_g1.png',
+            title:'前男友'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_g2.png',
+            title:'第一夫人'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_g3.png',
+            title:'绯闻女友'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_g4.png',
+            title:'吴亦凡'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_g5.png',
+            title:'闺蜜'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_g6.png',
+            title:'诗和远方'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_s1.png',
+            title:'一夜暴富'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_s2.png',
+            title:'二胎'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_s3.png',
+            title:'震惊'
+        },{
+            image: 'http://p1.ifengimg.com/29b92e35b2b20708/2017/4/h5_s4.png',
+            title:'一个亿'
+        }]
+    };
+    var app = new Vue({
+        el: '#global',
+        data: {
+            sex: 'man',
+            isShowInput: false,
+            name: '',
+            isPage1: true,
+            isPage2: false,
+            isPage3: false,
+            isShow4: false,
+            rawTitle: '',
+            query: '',
+            title: '',
+            content: '',
+            image: '',
+            url: '',
+            showBottom: true
+        },
+        methods: {
+            choose: function(sex) {
+                this.sex = sex
+            },
+            showInput: function() {
+                this.isShowInput = true;
+            },
+            checkName: function() {
+                if (!this.name) {
+                    alert('请输入你的名字');
+                    return
+                }
+                var reg = new RegExp(KEYWORDS, "g");
+                if (reg.test(this.name)) {
+                    alert('你不能选' + this.name + '为名字');
+                } else {
+                    this.isPage2 = true;
+
+
+                    if(isApps){
+                        this.isShow4 = true;
+                    }
+
+
+                    this.getScript();
+                }
+            },
+            getScript: function(obj) {
+                if (typeof(obj) == 'object') {
+                    NEWUrl = 'http://share.iclient.ifeng.com/keyWord2017?name=' + obj.name +'&sex=' + obj.sex + '&title=' + obj.rawTitle;
+                    this.url = NEWUrl;
+                    TITLE = obj.name+'的2017年新闻关键词是：'+obj.title+'-凤凰新闻';
+                    DESC = '厉害了我的2017！不服来战！';
+                    WXIMAGE = 'http://p0.ifengimg.com/29b92e35b2b20708/2017/4/300x300.png';
+                } else if (obj === 'default') {
+                    NEWUrl = 'http://share.iclient.ifeng.com/keyWord2017';
+                    this.url = NEWUrl;
+                    TITLE = '生成我的2017关键词-凤凰新闻';
+                    DESC = '厉害了我的2017！不服来战！';
+                    WXIMAGE ='http://p0.ifengimg.com/29b92e35b2b20708/2017/4/300x300.png';
+                } else {
+                    NEWUrl = 'http://share.iclient.ifeng.com/keyWord2017?name=' + this.name +'&sex=' + this.sex + '&title=' + this.newsData.rawTitle;
+                    this.url = NEWUrl;
+                    TITLE = this.name +'的2017年新闻关键词是'+ this.newsData.title + '-凤凰新闻';
+                    DESC = '厉害了我的2017！不服来战！';
+                    WXIMAGE = 'http://p0.ifengimg.com/29b92e35b2b20708/2017/4/300x300.png';
+                }
+                sharetitle= TITLE;
+                sharelink=  NEWUrl;
+                shareimgUrl= WXIMAGE;
+                sharedesc= DESC;
+                shareTimeline = TITLE;
+                wx.config({
+                    debug: false,
+                    appId: "wxa999fc3347109100",
+                    timestamp: "1525661688",
+                    nonceStr: "P7KVhHYX1NINj4KB",
+                    signature: "62e3195e2928182b7dd68af89ff4019183a38d0a",
+                    jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo'
+                        // 所有要调用的 API 都要加到这个列表中
+                    ]
+                });
+
+                weixinshare()
+
+                document.title = TITLE;
+            },
+            makeShow: function(num) {
+                if (num) {
+                    this.isPage3 = true;
+                } else {
+                    this.isPage3 = false;
+                }
+            },
+            getQuery: function(query) {
+                var reg = /([^?=&\s]+)[=\s]*([^?=&\s]*)/g;
+                var obj = {};
+                while(reg.exec(query)){
+                    obj[RegExp.$1] = RegExp.$2;
+                }
+                return obj
+            },
+            reload: function() {
+                location.href= 'http://share.iclient.ifeng.com/keyWord2017?'+ Math.random();
+            }
+        },
+        mounted: function() {
+            var query = location.search;
+            var res = this.getQuery(query);
+            this.query = res;
+            if (res.sex && res.name && res.title) {
+                this.sex = res.sex;
+                var rawTitle = decodeURIComponent(res.title);
+                this.name = decodeURIComponent(res.name);
+                //var content = '';
+                var image = '';
+                //var wxImage = '';
+                DATA[this.sex].forEach(function(item) {
+                    if(item.title === rawTitle) {
+                        //content = item.content;
+                        image = item.image;
+                        //wxImage = item.wxImage;
+                    }
+                })
+                this.title = rawTitle.replace(/XXX/g, this.name);
+                //this.content = content.replace(/XXX/g, this.name);
+                this.getScript({
+                    sex: this.sex,
+                    name: this.name,
+                    rawTitle: rawTitle,
+                    //wxImage: wxImage,
+                    title: this.title,
+                    //content: this.content
+                });
+                this.image = image;
+                //this.time = new Date().toLocaleString();
+                this.isPage2 = true;
+            } else {
+                this.showPerson = true;
+                this.getScript('default');
+            }
+        },
+        computed: {
+            newsData: function() {
+                if(!this.name) return;
+                if (!this.query.name) {
+                    var arr = DATA[this.sex];
+                    var object = arr[Math.floor(Math.random() * arr.length)];
+                    return {
+                        title: object.title.replace(/XXX/g, this.name),
+                        //content: object.content.replace(/XXX/g, this.name),
+                        image: object.image,
+                        //wxImage: object.wxImage,
+                        rawTitle: object.title
+                    }
+                } else {
+                    return ''
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>
+
+
+
+

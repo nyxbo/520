@@ -1,0 +1,300 @@
+html,body,div,img{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  //overflow: hidden;
+}
+img{
+  display: block;
+}
+[v-clock]{
+  display: none;
+}
+.hide{
+  display: none;
+}
+.box{
+  position: relative;
+  background: url("http://p2.ifengimg.com/d27607d14a52d158/2018/19/redbg.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 100%;
+  //height: 100%;
+  //display: flex;
+  //align-items:center;
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.loading{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  padding-top: 4.60rem;
+  //width: 5.57rem;
+  width: 100%;
+  min-height: 100%;
+  background: url("http://p2.ifengimg.com/d27607d14a52d158/2018/19/redbg.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  .loading0{
+    margin: 0 auto .20rem;
+    //margin-bottom: .20rem;
+    width: 5.57rem;
+    height: .73rem;
+    animation: pulse linear 800ms infinite;
+  }
+  .loading1{
+    margin: 0 auto;
+    width: 5.21rem;
+    height: .80rem;
+  }
+}
+.page3{
+  padding-top: 1.30rem;
+  .resultImg{
+    margin: 0 auto;
+    width: 6.52rem;
+    height: 7.40rem;
+  }
+  .resultTip{
+    margin: .35rem auto .50rem;
+    width: 3.80rem;
+    height: .30rem;
+  }
+  .resultbtn{
+    margin: 0 auto 1.35rem;
+    width: 6.55rem;
+    height: 1.03rem;
+    img{
+      display: inline-block;
+    }
+    img.retest{
+      float: left;
+      width: 3.40rem;
+      height: 1.03rem;
+    }
+    img.more{
+      float: right;
+      width: 2.90rem;
+      height: 1.03rem;
+    }
+  }
+}
+.girl,.boy{
+  padding-top: .81rem;
+}
+.girl1,.girl2,.girl3,.girl4,.girl5,.girl6,.girlboy7,.girlboy8,.girlboy9,.girlboy10,.boy1,.boy2,.boy3,.boy4,.boy5,.boy6{
+  position: relative;
+  margin: 0 .41rem 0 .58rem;
+  //padding-top: .81rem;
+  width: 6.52rem;
+  height: 100%;
+  .bg0{
+    width: 6.52rem;
+    height: 10.12rem;
+  }
+  .w_num1{
+    position: absolute;
+    top: 0;
+    left: 1.81rem;
+    width: 2.62rem;
+    height: .91rem;
+  }
+  .title{
+    position: absolute;
+    top: 1.47rem;
+    left: .38rem;
+  }
+  .w_title1{
+    width: 5.46rem;
+    height: 1.61rem;
+  }
+  .w_title2{
+    width: 5.46rem;
+    height: 1.01rem;
+  }
+  .w_title3{
+    width: 5.23rem;
+    height: .42rem;
+  }
+  .w_title4{
+    width: 5.47rem;
+    height: 1.01rem;
+  }
+  .w_title5{
+    width: 5.62rem;
+    height: 1.02rem;
+  }
+  .w_title6{
+    width: 5.44rem;
+    height: 1.01rem;
+  }
+  .mw_title7{
+    width: 5.65rem;
+    height: .42rem;
+  }
+  .mw_title8{
+    left: 1.13rem;
+    width: 3.97rem;
+    height: .41rem;
+  }
+  .mw_title9{
+    width: 5.45rem;
+    height: 1.02rem;
+  }
+  .mw_title10{
+    width: 5.36rem;
+    height: 2.22rem;
+  }
+  .m_title1{
+    width: 5.65rem;
+    height: .42rem;
+  }
+  .m_title2,.m_title3,.m_title5,.m_title6{
+    width: 5.45rem;
+    height: 1.02rem;
+  }
+  .m_title4{
+    width: 5.46rem;
+    height: 1.61rem;
+  }
+  .option{
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 6.16rem;
+    height: 4.25rem;
+    div{
+      display: inline-block;
+      //margin-left: .20rem;
+      margin: .20rem 0 .25rem 0;
+    }
+    div.option11{
+      margin-left: .72rem;
+      margin-top: .9rem;
+      margin-bottom: 1rem;
+      display: block;
+      width: 4.93rem;
+      height: .71rem;
+    }
+    .options{
+      position: relative;
+      .optionBtn{
+        position: absolute;
+        z-index: 1;
+        top: -.12rem;
+        left: -.12rem;
+      }
+      .optionTip{
+        position: absolute;
+        top: .40rem;
+        left: .45rem;
+        width: 1.77rem;
+        height: .73rem;
+      }
+      .optionBg1{
+        position: absolute;
+        top: -.2rem;
+        width: 4.93rem;
+        height: .81rem;
+      }
+      .option10Tip{
+        position: absolute;
+      }
+    }
+    .optionA,.optionC{
+      margin-left: .28rem;
+    }
+    .optionB,.optionD{
+      margin-left: .1rem;
+    }
+    .optionBg{
+      width: 2.68rem;
+      height: 1.74rem;
+    }
+    .optionBtn{
+      width: .58rem;
+      height: .58rem;
+    }
+  }
+}
+.w_p6{
+  position: absolute;
+  top: 3rem;
+  left: 1.15rem;
+  width: 3.92rem;
+  height: 2.95rem;
+}
+.mw_p7{
+  position: absolute;
+  top: 2.36rem;
+  left: 1.75rem;
+  width: 2.86rem;
+  height: 2.99rem;
+}
+.mw_p8{
+  position: absolute;
+  top: 2.36rem;
+  left: 1.68rem;
+  width: 2.73rem;
+  height: 3.35rem;
+}
+.mw_p9{
+  position: absolute;
+  top: 2.92rem;
+  left: 1.39rem;
+  width: 3.44rem;
+  height: 3.10rem;
+}
+.dog{
+  position: absolute;
+  width: 3.90rem;
+  height: 6.70rem;
+  right: -.20rem;
+  top: 2.35rem;
+}
+.next{
+  margin-top: .38rem;
+  margin-left: 1.26rem;
+  width: 3.84rem;
+  height: 1.33rem;
+}
+.mwNum{
+  position: absolute;
+  bottom: 2.21rem;
+  left: 2.84rem;
+  width: .56rem;
+  height: .21rem;
+}
+.testName{
+  position: absolute;
+  z-index: 1;
+  top: 2.2rem;
+  left: .6rem;
+  display: block;
+  width: 1.88rem;
+  text-align: center;
+  font-family: FZLTHH_SC;
+  font-size: .44rem;
+  font-weight: bolder;
+}

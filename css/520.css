@@ -1,0 +1,810 @@
+html,
+body,
+div,
+img {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+img {
+  display: block;
+}
+[v-clock] {
+  display: none;
+}
+.hide {
+  display: none;
+}
+.box {
+  position: relative;
+  background: url("http://p2.ifengimg.com/d27607d14a52d158/2018/19/redbg.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 100%;
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.loading {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  padding-top: 4.60rem;
+  width: 100%;
+  min-height: 100%;
+  background: url("http://p2.ifengimg.com/d27607d14a52d158/2018/19/redbg.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.loading .loading0 {
+  margin: 0 auto .20rem;
+  width: 5.57rem;
+  height: .73rem;
+  animation: pulse linear 800ms infinite;
+}
+.loading .loading1 {
+  margin: 0 auto;
+  width: 5.21rem;
+  height: .80rem;
+}
+.page3 {
+  padding-top: 1.30rem;
+}
+.page3 .resultImg {
+  margin: 0 auto;
+  width: 6.52rem;
+  height: 7.40rem;
+}
+.page3 .resultTip {
+  margin: .35rem auto .50rem;
+  width: 3.80rem;
+  height: .30rem;
+}
+.page3 .resultbtn {
+  margin: 0 auto 1.35rem;
+  width: 6.55rem;
+  height: 1.03rem;
+}
+.page3 .resultbtn img {
+  display: inline-block;
+}
+.page3 .resultbtn img.retest {
+  float: left;
+  width: 3.40rem;
+  height: 1.03rem;
+}
+.page3 .resultbtn img.more {
+  float: right;
+  width: 2.90rem;
+  height: 1.03rem;
+}
+.girl,
+.boy {
+  padding-top: .81rem;
+}
+.girl1,
+.girl2,
+.girl3,
+.girl4,
+.girl5,
+.girl6,
+.girlboy7,
+.girlboy8,
+.girlboy9,
+.girlboy10,
+.boy1,
+.boy2,
+.boy3,
+.boy4,
+.boy5,
+.boy6 {
+  position: relative;
+  margin: 0 .41rem 0 .58rem;
+  width: 6.52rem;
+  height: 100%;
+}
+.girl1 .bg0,
+.girl2 .bg0,
+.girl3 .bg0,
+.girl4 .bg0,
+.girl5 .bg0,
+.girl6 .bg0,
+.girlboy7 .bg0,
+.girlboy8 .bg0,
+.girlboy9 .bg0,
+.girlboy10 .bg0,
+.boy1 .bg0,
+.boy2 .bg0,
+.boy3 .bg0,
+.boy4 .bg0,
+.boy5 .bg0,
+.boy6 .bg0 {
+  width: 6.52rem;
+  height: 10.12rem;
+}
+.girl1 .w_num1,
+.girl2 .w_num1,
+.girl3 .w_num1,
+.girl4 .w_num1,
+.girl5 .w_num1,
+.girl6 .w_num1,
+.girlboy7 .w_num1,
+.girlboy8 .w_num1,
+.girlboy9 .w_num1,
+.girlboy10 .w_num1,
+.boy1 .w_num1,
+.boy2 .w_num1,
+.boy3 .w_num1,
+.boy4 .w_num1,
+.boy5 .w_num1,
+.boy6 .w_num1 {
+  position: absolute;
+  top: 0;
+  left: 1.81rem;
+  width: 2.62rem;
+  height: .91rem;
+}
+.girl1 .title,
+.girl2 .title,
+.girl3 .title,
+.girl4 .title,
+.girl5 .title,
+.girl6 .title,
+.girlboy7 .title,
+.girlboy8 .title,
+.girlboy9 .title,
+.girlboy10 .title,
+.boy1 .title,
+.boy2 .title,
+.boy3 .title,
+.boy4 .title,
+.boy5 .title,
+.boy6 .title {
+  position: absolute;
+  top: 1.47rem;
+  left: .38rem;
+}
+.girl1 .w_title1,
+.girl2 .w_title1,
+.girl3 .w_title1,
+.girl4 .w_title1,
+.girl5 .w_title1,
+.girl6 .w_title1,
+.girlboy7 .w_title1,
+.girlboy8 .w_title1,
+.girlboy9 .w_title1,
+.girlboy10 .w_title1,
+.boy1 .w_title1,
+.boy2 .w_title1,
+.boy3 .w_title1,
+.boy4 .w_title1,
+.boy5 .w_title1,
+.boy6 .w_title1 {
+  width: 5.46rem;
+  height: 1.61rem;
+}
+.girl1 .w_title2,
+.girl2 .w_title2,
+.girl3 .w_title2,
+.girl4 .w_title2,
+.girl5 .w_title2,
+.girl6 .w_title2,
+.girlboy7 .w_title2,
+.girlboy8 .w_title2,
+.girlboy9 .w_title2,
+.girlboy10 .w_title2,
+.boy1 .w_title2,
+.boy2 .w_title2,
+.boy3 .w_title2,
+.boy4 .w_title2,
+.boy5 .w_title2,
+.boy6 .w_title2 {
+  width: 5.46rem;
+  height: 1.01rem;
+}
+.girl1 .w_title3,
+.girl2 .w_title3,
+.girl3 .w_title3,
+.girl4 .w_title3,
+.girl5 .w_title3,
+.girl6 .w_title3,
+.girlboy7 .w_title3,
+.girlboy8 .w_title3,
+.girlboy9 .w_title3,
+.girlboy10 .w_title3,
+.boy1 .w_title3,
+.boy2 .w_title3,
+.boy3 .w_title3,
+.boy4 .w_title3,
+.boy5 .w_title3,
+.boy6 .w_title3 {
+  width: 5.23rem;
+  height: .42rem;
+}
+.girl1 .w_title4,
+.girl2 .w_title4,
+.girl3 .w_title4,
+.girl4 .w_title4,
+.girl5 .w_title4,
+.girl6 .w_title4,
+.girlboy7 .w_title4,
+.girlboy8 .w_title4,
+.girlboy9 .w_title4,
+.girlboy10 .w_title4,
+.boy1 .w_title4,
+.boy2 .w_title4,
+.boy3 .w_title4,
+.boy4 .w_title4,
+.boy5 .w_title4,
+.boy6 .w_title4 {
+  width: 5.47rem;
+  height: 1.01rem;
+}
+.girl1 .w_title5,
+.girl2 .w_title5,
+.girl3 .w_title5,
+.girl4 .w_title5,
+.girl5 .w_title5,
+.girl6 .w_title5,
+.girlboy7 .w_title5,
+.girlboy8 .w_title5,
+.girlboy9 .w_title5,
+.girlboy10 .w_title5,
+.boy1 .w_title5,
+.boy2 .w_title5,
+.boy3 .w_title5,
+.boy4 .w_title5,
+.boy5 .w_title5,
+.boy6 .w_title5 {
+  width: 5.62rem;
+  height: 1.02rem;
+}
+.girl1 .w_title6,
+.girl2 .w_title6,
+.girl3 .w_title6,
+.girl4 .w_title6,
+.girl5 .w_title6,
+.girl6 .w_title6,
+.girlboy7 .w_title6,
+.girlboy8 .w_title6,
+.girlboy9 .w_title6,
+.girlboy10 .w_title6,
+.boy1 .w_title6,
+.boy2 .w_title6,
+.boy3 .w_title6,
+.boy4 .w_title6,
+.boy5 .w_title6,
+.boy6 .w_title6 {
+  width: 5.44rem;
+  height: 1.01rem;
+}
+.girl1 .mw_title7,
+.girl2 .mw_title7,
+.girl3 .mw_title7,
+.girl4 .mw_title7,
+.girl5 .mw_title7,
+.girl6 .mw_title7,
+.girlboy7 .mw_title7,
+.girlboy8 .mw_title7,
+.girlboy9 .mw_title7,
+.girlboy10 .mw_title7,
+.boy1 .mw_title7,
+.boy2 .mw_title7,
+.boy3 .mw_title7,
+.boy4 .mw_title7,
+.boy5 .mw_title7,
+.boy6 .mw_title7 {
+  width: 5.65rem;
+  height: .42rem;
+}
+.girl1 .mw_title8,
+.girl2 .mw_title8,
+.girl3 .mw_title8,
+.girl4 .mw_title8,
+.girl5 .mw_title8,
+.girl6 .mw_title8,
+.girlboy7 .mw_title8,
+.girlboy8 .mw_title8,
+.girlboy9 .mw_title8,
+.girlboy10 .mw_title8,
+.boy1 .mw_title8,
+.boy2 .mw_title8,
+.boy3 .mw_title8,
+.boy4 .mw_title8,
+.boy5 .mw_title8,
+.boy6 .mw_title8 {
+  left: 1.13rem;
+  width: 3.97rem;
+  height: .41rem;
+}
+.girl1 .mw_title9,
+.girl2 .mw_title9,
+.girl3 .mw_title9,
+.girl4 .mw_title9,
+.girl5 .mw_title9,
+.girl6 .mw_title9,
+.girlboy7 .mw_title9,
+.girlboy8 .mw_title9,
+.girlboy9 .mw_title9,
+.girlboy10 .mw_title9,
+.boy1 .mw_title9,
+.boy2 .mw_title9,
+.boy3 .mw_title9,
+.boy4 .mw_title9,
+.boy5 .mw_title9,
+.boy6 .mw_title9 {
+  width: 5.45rem;
+  height: 1.02rem;
+}
+.girl1 .mw_title10,
+.girl2 .mw_title10,
+.girl3 .mw_title10,
+.girl4 .mw_title10,
+.girl5 .mw_title10,
+.girl6 .mw_title10,
+.girlboy7 .mw_title10,
+.girlboy8 .mw_title10,
+.girlboy9 .mw_title10,
+.girlboy10 .mw_title10,
+.boy1 .mw_title10,
+.boy2 .mw_title10,
+.boy3 .mw_title10,
+.boy4 .mw_title10,
+.boy5 .mw_title10,
+.boy6 .mw_title10 {
+  width: 5.36rem;
+  height: 2.22rem;
+}
+.girl1 .m_title1,
+.girl2 .m_title1,
+.girl3 .m_title1,
+.girl4 .m_title1,
+.girl5 .m_title1,
+.girl6 .m_title1,
+.girlboy7 .m_title1,
+.girlboy8 .m_title1,
+.girlboy9 .m_title1,
+.girlboy10 .m_title1,
+.boy1 .m_title1,
+.boy2 .m_title1,
+.boy3 .m_title1,
+.boy4 .m_title1,
+.boy5 .m_title1,
+.boy6 .m_title1 {
+  width: 5.65rem;
+  height: .42rem;
+}
+.girl1 .m_title2,
+.girl2 .m_title2,
+.girl3 .m_title2,
+.girl4 .m_title2,
+.girl5 .m_title2,
+.girl6 .m_title2,
+.girlboy7 .m_title2,
+.girlboy8 .m_title2,
+.girlboy9 .m_title2,
+.girlboy10 .m_title2,
+.boy1 .m_title2,
+.boy2 .m_title2,
+.boy3 .m_title2,
+.boy4 .m_title2,
+.boy5 .m_title2,
+.boy6 .m_title2,
+.girl1 .m_title3,
+.girl2 .m_title3,
+.girl3 .m_title3,
+.girl4 .m_title3,
+.girl5 .m_title3,
+.girl6 .m_title3,
+.girlboy7 .m_title3,
+.girlboy8 .m_title3,
+.girlboy9 .m_title3,
+.girlboy10 .m_title3,
+.boy1 .m_title3,
+.boy2 .m_title3,
+.boy3 .m_title3,
+.boy4 .m_title3,
+.boy5 .m_title3,
+.boy6 .m_title3,
+.girl1 .m_title5,
+.girl2 .m_title5,
+.girl3 .m_title5,
+.girl4 .m_title5,
+.girl5 .m_title5,
+.girl6 .m_title5,
+.girlboy7 .m_title5,
+.girlboy8 .m_title5,
+.girlboy9 .m_title5,
+.girlboy10 .m_title5,
+.boy1 .m_title5,
+.boy2 .m_title5,
+.boy3 .m_title5,
+.boy4 .m_title5,
+.boy5 .m_title5,
+.boy6 .m_title5,
+.girl1 .m_title6,
+.girl2 .m_title6,
+.girl3 .m_title6,
+.girl4 .m_title6,
+.girl5 .m_title6,
+.girl6 .m_title6,
+.girlboy7 .m_title6,
+.girlboy8 .m_title6,
+.girlboy9 .m_title6,
+.girlboy10 .m_title6,
+.boy1 .m_title6,
+.boy2 .m_title6,
+.boy3 .m_title6,
+.boy4 .m_title6,
+.boy5 .m_title6,
+.boy6 .m_title6 {
+  width: 5.45rem;
+  height: 1.02rem;
+}
+.girl1 .m_title4,
+.girl2 .m_title4,
+.girl3 .m_title4,
+.girl4 .m_title4,
+.girl5 .m_title4,
+.girl6 .m_title4,
+.girlboy7 .m_title4,
+.girlboy8 .m_title4,
+.girlboy9 .m_title4,
+.girlboy10 .m_title4,
+.boy1 .m_title4,
+.boy2 .m_title4,
+.boy3 .m_title4,
+.boy4 .m_title4,
+.boy5 .m_title4,
+.boy6 .m_title4 {
+  width: 5.46rem;
+  height: 1.61rem;
+}
+.girl1 .option,
+.girl2 .option,
+.girl3 .option,
+.girl4 .option,
+.girl5 .option,
+.girl6 .option,
+.girlboy7 .option,
+.girlboy8 .option,
+.girlboy9 .option,
+.girlboy10 .option,
+.boy1 .option,
+.boy2 .option,
+.boy3 .option,
+.boy4 .option,
+.boy5 .option,
+.boy6 .option {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: 6.16rem;
+  height: 4.25rem;
+}
+.girl1 .option div,
+.girl2 .option div,
+.girl3 .option div,
+.girl4 .option div,
+.girl5 .option div,
+.girl6 .option div,
+.girlboy7 .option div,
+.girlboy8 .option div,
+.girlboy9 .option div,
+.girlboy10 .option div,
+.boy1 .option div,
+.boy2 .option div,
+.boy3 .option div,
+.boy4 .option div,
+.boy5 .option div,
+.boy6 .option div {
+  display: inline-block;
+  margin: .20rem 0 .25rem 0;
+}
+.girl1 .option div.option11,
+.girl2 .option div.option11,
+.girl3 .option div.option11,
+.girl4 .option div.option11,
+.girl5 .option div.option11,
+.girl6 .option div.option11,
+.girlboy7 .option div.option11,
+.girlboy8 .option div.option11,
+.girlboy9 .option div.option11,
+.girlboy10 .option div.option11,
+.boy1 .option div.option11,
+.boy2 .option div.option11,
+.boy3 .option div.option11,
+.boy4 .option div.option11,
+.boy5 .option div.option11,
+.boy6 .option div.option11 {
+  margin-left: .72rem;
+  margin-top: .9rem;
+  margin-bottom: 1rem;
+  display: block;
+  width: 4.93rem;
+  height: .71rem;
+}
+.girl1 .option .options,
+.girl2 .option .options,
+.girl3 .option .options,
+.girl4 .option .options,
+.girl5 .option .options,
+.girl6 .option .options,
+.girlboy7 .option .options,
+.girlboy8 .option .options,
+.girlboy9 .option .options,
+.girlboy10 .option .options,
+.boy1 .option .options,
+.boy2 .option .options,
+.boy3 .option .options,
+.boy4 .option .options,
+.boy5 .option .options,
+.boy6 .option .options {
+  position: relative;
+}
+.girl1 .option .options .optionBtn,
+.girl2 .option .options .optionBtn,
+.girl3 .option .options .optionBtn,
+.girl4 .option .options .optionBtn,
+.girl5 .option .options .optionBtn,
+.girl6 .option .options .optionBtn,
+.girlboy7 .option .options .optionBtn,
+.girlboy8 .option .options .optionBtn,
+.girlboy9 .option .options .optionBtn,
+.girlboy10 .option .options .optionBtn,
+.boy1 .option .options .optionBtn,
+.boy2 .option .options .optionBtn,
+.boy3 .option .options .optionBtn,
+.boy4 .option .options .optionBtn,
+.boy5 .option .options .optionBtn,
+.boy6 .option .options .optionBtn {
+  position: absolute;
+  z-index: 1;
+  top: -0.12rem;
+  left: -0.12rem;
+}
+.girl1 .option .options .optionTip,
+.girl2 .option .options .optionTip,
+.girl3 .option .options .optionTip,
+.girl4 .option .options .optionTip,
+.girl5 .option .options .optionTip,
+.girl6 .option .options .optionTip,
+.girlboy7 .option .options .optionTip,
+.girlboy8 .option .options .optionTip,
+.girlboy9 .option .options .optionTip,
+.girlboy10 .option .options .optionTip,
+.boy1 .option .options .optionTip,
+.boy2 .option .options .optionTip,
+.boy3 .option .options .optionTip,
+.boy4 .option .options .optionTip,
+.boy5 .option .options .optionTip,
+.boy6 .option .options .optionTip {
+  position: absolute;
+  top: .40rem;
+  left: .45rem;
+  width: 1.77rem;
+  height: .73rem;
+}
+.girl1 .option .options .optionBg1,
+.girl2 .option .options .optionBg1,
+.girl3 .option .options .optionBg1,
+.girl4 .option .options .optionBg1,
+.girl5 .option .options .optionBg1,
+.girl6 .option .options .optionBg1,
+.girlboy7 .option .options .optionBg1,
+.girlboy8 .option .options .optionBg1,
+.girlboy9 .option .options .optionBg1,
+.girlboy10 .option .options .optionBg1,
+.boy1 .option .options .optionBg1,
+.boy2 .option .options .optionBg1,
+.boy3 .option .options .optionBg1,
+.boy4 .option .options .optionBg1,
+.boy5 .option .options .optionBg1,
+.boy6 .option .options .optionBg1 {
+  position: absolute;
+  top: -0.2rem;
+  width: 4.93rem;
+  height: .81rem;
+}
+.girl1 .option .options .option10Tip,
+.girl2 .option .options .option10Tip,
+.girl3 .option .options .option10Tip,
+.girl4 .option .options .option10Tip,
+.girl5 .option .options .option10Tip,
+.girl6 .option .options .option10Tip,
+.girlboy7 .option .options .option10Tip,
+.girlboy8 .option .options .option10Tip,
+.girlboy9 .option .options .option10Tip,
+.girlboy10 .option .options .option10Tip,
+.boy1 .option .options .option10Tip,
+.boy2 .option .options .option10Tip,
+.boy3 .option .options .option10Tip,
+.boy4 .option .options .option10Tip,
+.boy5 .option .options .option10Tip,
+.boy6 .option .options .option10Tip {
+  position: absolute;
+}
+.girl1 .option .optionA,
+.girl2 .option .optionA,
+.girl3 .option .optionA,
+.girl4 .option .optionA,
+.girl5 .option .optionA,
+.girl6 .option .optionA,
+.girlboy7 .option .optionA,
+.girlboy8 .option .optionA,
+.girlboy9 .option .optionA,
+.girlboy10 .option .optionA,
+.boy1 .option .optionA,
+.boy2 .option .optionA,
+.boy3 .option .optionA,
+.boy4 .option .optionA,
+.boy5 .option .optionA,
+.boy6 .option .optionA,
+.girl1 .option .optionC,
+.girl2 .option .optionC,
+.girl3 .option .optionC,
+.girl4 .option .optionC,
+.girl5 .option .optionC,
+.girl6 .option .optionC,
+.girlboy7 .option .optionC,
+.girlboy8 .option .optionC,
+.girlboy9 .option .optionC,
+.girlboy10 .option .optionC,
+.boy1 .option .optionC,
+.boy2 .option .optionC,
+.boy3 .option .optionC,
+.boy4 .option .optionC,
+.boy5 .option .optionC,
+.boy6 .option .optionC {
+  margin-left: .28rem;
+}
+.girl1 .option .optionB,
+.girl2 .option .optionB,
+.girl3 .option .optionB,
+.girl4 .option .optionB,
+.girl5 .option .optionB,
+.girl6 .option .optionB,
+.girlboy7 .option .optionB,
+.girlboy8 .option .optionB,
+.girlboy9 .option .optionB,
+.girlboy10 .option .optionB,
+.boy1 .option .optionB,
+.boy2 .option .optionB,
+.boy3 .option .optionB,
+.boy4 .option .optionB,
+.boy5 .option .optionB,
+.boy6 .option .optionB,
+.girl1 .option .optionD,
+.girl2 .option .optionD,
+.girl3 .option .optionD,
+.girl4 .option .optionD,
+.girl5 .option .optionD,
+.girl6 .option .optionD,
+.girlboy7 .option .optionD,
+.girlboy8 .option .optionD,
+.girlboy9 .option .optionD,
+.girlboy10 .option .optionD,
+.boy1 .option .optionD,
+.boy2 .option .optionD,
+.boy3 .option .optionD,
+.boy4 .option .optionD,
+.boy5 .option .optionD,
+.boy6 .option .optionD {
+  margin-left: .1rem;
+}
+.girl1 .option .optionBg,
+.girl2 .option .optionBg,
+.girl3 .option .optionBg,
+.girl4 .option .optionBg,
+.girl5 .option .optionBg,
+.girl6 .option .optionBg,
+.girlboy7 .option .optionBg,
+.girlboy8 .option .optionBg,
+.girlboy9 .option .optionBg,
+.girlboy10 .option .optionBg,
+.boy1 .option .optionBg,
+.boy2 .option .optionBg,
+.boy3 .option .optionBg,
+.boy4 .option .optionBg,
+.boy5 .option .optionBg,
+.boy6 .option .optionBg {
+  width: 2.68rem;
+  height: 1.74rem;
+}
+.girl1 .option .optionBtn,
+.girl2 .option .optionBtn,
+.girl3 .option .optionBtn,
+.girl4 .option .optionBtn,
+.girl5 .option .optionBtn,
+.girl6 .option .optionBtn,
+.girlboy7 .option .optionBtn,
+.girlboy8 .option .optionBtn,
+.girlboy9 .option .optionBtn,
+.girlboy10 .option .optionBtn,
+.boy1 .option .optionBtn,
+.boy2 .option .optionBtn,
+.boy3 .option .optionBtn,
+.boy4 .option .optionBtn,
+.boy5 .option .optionBtn,
+.boy6 .option .optionBtn {
+  width: .58rem;
+  height: .58rem;
+}
+.w_p6 {
+  position: absolute;
+  top: 3rem;
+  left: 1.15rem;
+  width: 3.92rem;
+  height: 2.95rem;
+}
+.mw_p7 {
+  position: absolute;
+  top: 2.36rem;
+  left: 1.75rem;
+  width: 2.86rem;
+  height: 2.99rem;
+}
+.mw_p8 {
+  position: absolute;
+  top: 2.36rem;
+  left: 1.68rem;
+  width: 2.73rem;
+  height: 3.35rem;
+}
+.mw_p9 {
+  position: absolute;
+  top: 2.92rem;
+  left: 1.39rem;
+  width: 3.44rem;
+  height: 3.10rem;
+}
+.dog {
+  position: absolute;
+  width: 3.90rem;
+  height: 6.70rem;
+  right: -0.2rem;
+  top: 2.35rem;
+}
+.next {
+  margin-top: .38rem;
+  margin-left: 1.26rem;
+  width: 3.84rem;
+  height: 1.33rem;
+}
+.mwNum {
+  position: absolute;
+  bottom: 2.21rem;
+  left: 2.84rem;
+  width: .56rem;
+  height: .21rem;
+}
+.testName {
+  position: absolute;
+  z-index: 1;
+  top: 2.2rem;
+  left: .6rem;
+  display: block;
+  width: 1.88rem;
+  text-align: center;
+  font-family: FZLTHH_SC;
+  font-size: .44rem;
+  font-weight: bolder;
+}

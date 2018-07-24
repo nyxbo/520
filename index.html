@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="keywords" content="嘿！你未来的ta是什么样？" />
+    <meta name="description" content="嘿！你未来的ta是什么样？" />
+    <title>嘿！你未来的ta是什么样？</title>
+    <link rel="stylesheet" href="http://p2.ifengimg.com/d27607d14a52d158/2018/19/520.css">
+    <style>
+        body{
+            background-color:#ee4954
+        }
+        .box{
+            overflow:hidden;
+        }
+        .dog{
+            pointer-events:none;
+        }
+        .bg0{
+            pointer-events:none;
+        }
+        .noImg,.w_num1,.optionBg,.optionBtn,.optionTip,.optionBg1{
+            pointer-events:none; /* 禁止图片点击 */
+        }
+        #page1 {
+            width:100%;
+            height:100%;
+            position:relative;
+
+        }
+        .girl, .boy{
+            padding-top: 0;
+            height: 100%;
+            overflow:hidden;
+        }
+        .girl1, .girl2, .girl3, .girl4, .girl5, .girl6, .girlboy7, .girlboy8, .girlboy9, .girlboy10, .boy1, .boy2, .boy3, .boy4, .boy5, .boy6{
+            margin-top:.2rem
+        }
+        .mwNum{bottom:0;top:9.3rem;pointer-events:none;}
+        .next{margin-top:.33rem;}
+        #page1 .bigNews {width:6.5rem; height:10.5rem; position: relative;top:.2rem;left:50%;margin-left:-3.25rem;pointer-events:none;}
+
+        #page1 .bottom {width: 2.52rem; height: .50rem; position: absolute; bottom: .47rem; left: 50%; margin-left: -1.26rem; }
+        #page1 .sex-container {
+            position: absolute;
+            z-index: 1;
+            top: 7.3rem;
+            /*bottom: 4.1rem;*/
+            left: 1.65rem;
+            /*width: 100%;*/
+            /*height:.33rem;*/
+            font-size: .28rem;
+            /*width:2.2rem;*/
+            /*margin-left:2.66rem*/
+        }
+        #page1 .sex-container span {
+            display: inline-block;
+            background:url('http://p2.ifengimg.com/d27607d14a52d158/2018/19/nochoice.png') no-repeat;
+            width: .57rem;
+            height: .57rem;
+            background-size: contain;
+            padding-left: .45rem;
+            line-height: .33rem;
+            font-size:.35rem;
+            color:#313131;
+            font-weight:bold;
+        }
+        #page1 .sex-container span.man{margin-left:.45rem}
+        #page1 .sex-container span.woman {margin-left:1.65rem}
+        #page1 .sex-container span.active {
+            /*background:url('http://p2.ifengimg.com/d27607d14a52d158/2018/19/choice.png') no-repeat;*/
+            background:url('http://p2.ifengimg.com/d27607d14a52d158/2018/19/sexok.png') no-repeat;
+            background-size: contain;
+        }
+        #page1 .sex-container img{
+            display: block;
+            float: left;
+            width: 1.56rem;
+            height: .38rem;
+        }
+        #page1 .button-group {
+            position: absolute;
+            top: 6.8rem;
+            /*bottom: 4.65rem; */
+            width: 100%;
+            /*height: 2rem;*/
+        }
+        #page1 .button-group span { display: block;  margin: 0 auto;}
+        #page1 .button-group span.input-name {
+            display:block;
+            position: relative;
+        }
+        #page1 .button-group span.input-name input {position: absolute; background:#ffef85; background-size:100% 100%;left: 50%;margin-left:-1.5rem; width: 3rem; text-align: center; font-size: .35rem; font-weight: bold;color:#313131;border:none;outline: none;display:block;height:.4rem;top:-.53rem;}
+        #page1 .button-group span.create-new { background:url('http://p2.ifengimg.com/d27607d14a52d158/2018/19/begin.png') no-repeat; background-size:100% 100%;  width:3.9rem;  height:.94rem;position: absolute; top:2.2rem;left:50%;margin-left:-1.85rem}
+        .logo{  width: 4.91rem;  height: .70rem;margin-left: 1.10rem;}
+        .page3 .super{
+            /*position:absolute;*/
+            /*top:0;*/
+            /*left:0;*/
+            width:100%;height:100%;}
+        .page3{
+            /*background: url("http://p2.ifengimg.com/d27607d14a52d158/2018/19/redbg.png") no-repeat;*/
+            /*-webkit-background-size: cover;*/
+            /*background-size: cover;*/
+            padding-top: 0;
+        }
+        .floatBtn{
+            background: url("http://p0.ifengimg.com/d27607d14a52d158/2018/19/floatbg.png") no-repeat;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 3.59rem;
+            position: absolute;
+            top: 8.72rem;
+            left: 0;
+        }
+        .next{
+            background: url("http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png") no-repeat center center;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+        .next.result{
+            background: url("http://p2.ifengimg.com/d27607d14a52d158/2018/19/result.png") no-repeat center center;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="box" v-clock>
+    <div class="loading">
+        <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/loading0.png" alt="" class="loading0 noImg">
+        <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/loading1.png" alt="" class="loading1 noImg">
+    </div>
+
+    <div id="page1" v-if="ispage">
+        <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/beginBg.png" class="bigNews">
+        <div class="sex-container">
+            <span class="man" :class="{ active: sex === 'man' }" @click="choose('man')"></span>
+            <span class="woman" :class="{ active: sex === 'woman' }" @click="choose('woman')"></span>
+            <div>
+                <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/boy.png" alt="">
+                <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/girl.png" alt="" style="float: right;">
+            </div>
+        </div>
+        <div class="button-group">
+          <span class="input-name" @click="showInput">
+            <input type="text" v-show="isShowInput" v-model="name">
+          </span>
+            <span class="create-new" @click="checkName"></span>
+        </div>
+        <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/logo.png" alt="" class="logo noImg" style="  margin: .40rem auto 0;">
+    </div>
+
+    <div class="girl" v-if="girl">
+        <div class="girl1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_num1.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_title1.png" alt="" class="w_title1 title noImg">
+            <div class="option">
+                <div class="optionA options" @click="choice('A')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_a.png" alt="" class="optionBtn" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_1a.png" alt="" class="optionTip">
+                </div>
+                <div class="optionB options" @click="choice('B')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_b.png" alt="" class="optionBtn" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_1b.png" alt="" class="optionTip">
+                </div>
+                <div class="optionC options" @click="choice('C')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_c.png" alt="" class="optionBtn" v-if="isGirl.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_c.png" alt="" class="optionBtn" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_1c.png" alt="" class="optionTip">
+                </div>
+                <div class="optionD options" @click="choice('D')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_d.png" alt="" class="optionBtn" v-if="isGirl.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_d.png" alt="" class="optionBtn" v-if="isGirl.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_1d.png" alt="" class="optionTip" style="width:2.26rem;height: .39rem;left: .18rem;top:.59rem">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw101.png" alt="" class="mwNum">
+
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="1" onclick="toNext(1)">-->
+            <div class="next" data-id="1" onclick="toNext(1)"></div>
+        </div>
+        <div class="girl2 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_num2.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_title2.png" alt="" class="w_title2 title noImg">
+            <div class="option">
+                <div class="optionA options" @click="choice('A')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_a.png" alt="" class="optionBtn" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_2a.png" alt="" class="optionTip" style="width:1.40rem;height:.38rem;left:.60rem;top:.59rem">
+                </div>
+                <div class="optionB options" @click="choice('B')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_b.png" alt="" class="optionBtn" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_2b.png" alt="" class="optionTip" style="width:1.78rem;height:.74rem">
+                </div>
+                <div class="optionC options" @click="choice('C')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_c.png" alt="" class="optionBtn" v-if="isGirl.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_c.png" alt="" class="optionBtn" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_2c.png" alt="" class="optionTip" style="width:1.44rem;height:.40rem;left:.60rem;top:.59rem">
+                </div>
+                <div class="optionD options" @click="choice('D')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_d.png" alt="" class="optionBtn" v-if="isGirl.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_d.png" alt="" class="optionBtn" v-if="isGirl.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_2d.png" alt="" class="optionTip" style="width:1.44rem;height: .38rem;left:.60rem;top:.59rem">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw102.png" alt="" class="mwNum">
+
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="2"  onclick="toNext(2)">-->
+            <div class="next" data-id="2" onclick="toNext(2)"></div>
+        </div>
+        <div class="girl3 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_num3.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_title3.png" alt="" class="w_title3 title noImg">
+            <div class="option">
+                <div class="optionA options" @click="choice('A')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_a.png" alt="" class="optionBtn" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_3a.png" alt="" class="optionTip" style="width:1.40rem;height:.38rem;left:.60rem;top:.59rem">
+                </div>
+                <div class="optionB options" @click="choice('B')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_b.png" alt="" class="optionBtn" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_3b.png" alt="" class="optionTip" style="width:1.44rem;height:.40rem;left:.60rem;top:.59rem">
+                </div>
+                <div class="optionC options" @click="choice('C')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_c.png" alt="" class="optionBtn" v-if="isGirl.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_c.png" alt="" class="optionBtn" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_3c.png" alt="" class="optionTip" style="width:1.01rem;height:.37rem;left:.73rem;top:.59rem">
+                </div>
+                <div class="optionD options" @click="choice('D')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_d.png" alt="" class="optionBtn" v-if="isGirl.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_d.png" alt="" class="optionBtn" v-if="isGirl.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_3d.png" alt="" class="optionTip" style="width:1.44rem;height: .38rem;left:.60rem;top:.59rem">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw103.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="3" onclick="toNext(3)">-->
+            <div class="next" data-id="3" onclick="toNext(3)"></div>
+        </div>
+        <div class="girl4 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_num4.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_title4.png" alt="" class="w_title4 title noImg">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_a.png" alt="" class="optionBtn" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_4a.png" alt="" class="optionTip" style="width:.27rem;height:.29rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_b.png" alt="" class="optionBtn" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_4b.png" alt="" class="optionTip" style="width:.27rem;height:.29rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_dog.png" alt="" class="dog">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw104.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="4"  onclick="toNext(4)">-->
+            <div class="next" data-id="4" onclick="toNext(4)"></div>
+        </div>
+        <div class="girl5 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_num5.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_title5.png" alt="" class="w_title5 title noImg">
+            <div class="option">
+                <div class="optionA options" @click="choice('A')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_a.png" alt="" class="optionBtn" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_5a.png" alt="" class="optionTip" style="width:.74rem;height:.39rem;left:.89rem;top:.59rem">
+                </div>
+                <div class="optionB options" @click="choice('B')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_b.png" alt="" class="optionBtn" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_5b.png" alt="" class="optionTip" style="width:.74rem;height:.38rem;left:.89rem;top:.59rem">
+                </div>
+                <div class="optionC options" @click="choice('C')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_c.png" alt="" class="optionBtn" v-if="isGirl.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_c.png" alt="" class="optionBtn" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_5c.png" alt="" class="optionTip" style="width:1.41rem;height:.39rem;left:.60rem;top:.59rem">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw105.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="5" onclick="toNext(5)">-->
+            <div class="next" data-id="5" onclick="toNext(5)"></div>
+        </div>
+        <div class="girl6 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_num6.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_title6.png" alt="" class="w_title6 title noImg">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_p6.png" alt="" class="w_p6">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')" style="margin-top: 2.7rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_a.png" alt="" class="optionBtn" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_6a.png" alt="" class="optionTip" style="width:.57rem;height:.27rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')" style="margin-top: .15rem;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_b.png" alt="" class="optionBtn" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_6b.png" alt="" class="optionTip" style="width:.57rem;height:.27rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw106.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="6"  onclick="toNext(6)">-->
+            <div class="next" data-id="6" onclick="toNext(6)"></div>
+        </div>
+        <div class="girlboy7 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_num7.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_title7.png" alt="" class="mw_title7 title noImg">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p7.png" alt="" class="mw_p7">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')" style="margin-top: 2rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_a.png" alt="" class="optionBtn" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_7a.png" alt="" class="optionTip" style="width:.58rem;height:.29rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_b.png" alt="" class="optionBtn" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_7b.png" alt="" class="optionTip" style="width:1.47rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionC options option11" @click="choice('C')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_c.png" alt="" class="optionBtn" v-if="isGirl.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_c.png" alt="" class="optionBtn" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_7c.png" alt="" class="optionTip" style="width:1.16rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionD options option11" @click="choice('D')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_d.png" alt="" class="optionBtn" v-if="isGirl.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_d.png" alt="" class="optionBtn" v-if="isGirl.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_7d.png" alt="" class="optionTip" style="width:1.18rem;height:.29rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw107.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="7"  onclick="toNext(7)">-->
+            <div class="next" data-id="7" onclick="toNext(7)"></div>
+        </div>
+        <div class="girlboy8 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_num8.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_title8.png" alt="" class="mw_title8 title noImg">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p8.png" alt="" class="mw_p8">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')" style="margin-top: 2rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_a.png" alt="" class="optionBtn" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_8a.png" alt="" class="optionTip" style="width:1.17rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_b.png" alt="" class="optionBtn" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_8b.png" alt="" class="optionTip" style="width:1rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionC options option11" @click="choice('C')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_c.png" alt="" class="optionBtn" v-if="isGirl.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_c.png" alt="" class="optionBtn" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_8c.png" alt="" class="optionTip" style="width:1rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionD options option11" @click="choice('D')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_d.png" alt="" class="optionBtn" v-if="isGirl.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_d.png" alt="" class="optionBtn" v-if="isGirl.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_8d.png" alt="" class="optionTip" style="width:1rem;height:.29rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw108.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="8"  onclick="toNext(8)">-->
+            <div class="next" data-id="8" onclick="toNext(8)"></div>
+        </div>
+        <div class="girlboy9 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_num9.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_title9.png" alt="" class="mw_title9 title noImg">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p9.png" alt="" class="mw_p9">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')" style="margin-top: 2.6rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_a.png" alt="" class="optionBtn" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_9a.png" alt="" class="optionTip" style="width:3.86rem;height:.29rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_b.png" alt="" class="optionBtn" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_9b.png" alt="" class="optionTip" style="width:2.98rem;height:.29rem;left:.60rem;top:0">
+                </div>
+                <div class="optionC options option11" @click="choice('C')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_c.png" alt="" class="optionBtn" v-if="isGirl.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_c.png" alt="" class="optionBtn" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_9c.png" alt="" class="optionTip" style="width:4.11rem;height:.22rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw109.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="9"  onclick="toNext(9)">-->
+            <div class="next" data-id="9" onclick="toNext(9)"></div>
+        </div>
+        <div class="girlboy10 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_num10.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_title10.png" alt="" class="mw_title10 title noImg">
+            <div class="option">
+                <div class="optionA options" @click="choice('A')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_a.png" alt="" class="optionBtn" v-if="isGirl.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isGirl.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p10a.png" alt="" class="optionTip" style="width:2.19rem;height:1.37rem;left:.20rem;top:.15rem">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_10a.png" alt="" class="option10Tip" style="width: 1.16rem;height: .28rem;left:.75rem;top: 1.9rem;">
+                </div>
+                <div class="optionB options" @click="choice('B')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_b.png" alt="" class="optionBtn" v-if="isGirl.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isGirl.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p10b.png" alt="" class="optionTip" style="width:2.19rem;height:1.37rem;left:.20rem;top:.15rem">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_10b.png" alt="" class="option10Tip" style="width: 1.76rem;height: .28rem;left:.45rem;top: 1.9rem;">
+                </div>
+                <div class="optionC options" @click="choice('C')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_c.png" alt="" class="optionBtn" v-if="isGirl.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_c.png" alt="" class="optionBtn" v-if="isGirl.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p10c.png" alt="" class="optionTip" style="width:2.19rem;height:1.37rem;left:.20rem;top:.15rem">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_10c.png" alt="" class="option10Tip" style="width: 1.16rem;height: .28rem;left:.75rem;top: 1.9rem;">
+                </div>
+                <div class="optionD options" @click="choice('D')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="isGirl.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isGirl.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/pink_d.png" alt="" class="optionBtn" v-if="isGirl.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_d.png" alt="" class="optionBtn" v-if="isGirl.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p10d.png" alt="" class="optionTip" style="width:2.19rem;height:1.37rem;left:.20rem;top:.15rem">
+                    <img src="http://p0.ifengimg.com/d27607d14a52d158/2018/19/mw_10D.png" alt="" class="option10Tip" style="width: 1.77rem;height: .28rem;left:.45rem;top: 1.9rem;">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw1010.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/result.png" alt="" class="next" data-id="10"  @click="toResult(10)">-->
+            <div class="next result" data-id="10" @click="toResult(10)"></div>
+        </div>
+
+    </div>
+
+    <div class="boy" v-if="boy">
+        <div class="boy1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_num1.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_title1.png" alt="" class="m_title1 title noImg">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_a.png" alt="" class="optionBtn" v-if="isBoy.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_1a.png" alt="" class="optionTip" style="width:2.66rem;height:.29rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_b.png" alt="" class="optionBtn" v-if="isBoy.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_1b.png" alt="" class="optionTip" style="width:2.66rem;height:.29rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_dog1.png" alt="" class="dog">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw101.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="1" onclick="toNext(1)">-->
+            <div class="next" data-id="1" onclick="toNext(1)"></div>
+        </div>
+        <div class="boy2 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_num2.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_title2.png" alt="" class="m_title2 title noImg">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_a.png" alt="" class="optionBtn" v-if="isBoy.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_2a.png" alt="" class="optionTip" style="width:1.46rem;height:.27rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_b.png" alt="" class="optionBtn" v-if="isBoy.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_2b.png" alt="" class="optionTip" style="width:1.46rem;height:.27rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_dog2.png" alt="" class="dog">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw102.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="2" onclick="toNext(2)">-->
+            <div class="next" data-id="2" onclick="toNext(2)"></div>
+        </div>
+        <div class="boy3 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_num3.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_title3.png" alt="" class="m_title3 title noImg">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_a.png" alt="" class="optionBtn" v-if="isBoy.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_3a.png" alt="" class="optionTip" style="width:2.02rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_b.png" alt="" class="optionBtn" v-if="isBoy.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_3b.png" alt="" class="optionTip" style="width:2.08rem;height:.29rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_dog3.png" alt="" class="dog">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw103.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="3" onclick="toNext(3)">-->
+            <div class="next" data-id="3" onclick="toNext(3)"></div>
+        </div>
+        <div class="boy4 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_num4.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_title4.png" alt="" class="m_title4 title noImg">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_a.png" alt="" class="optionBtn" v-if="isBoy.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_4a.png" alt="" class="optionTip" style="width:2.08rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_b.png" alt="" class="optionBtn" v-if="isBoy.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_4b.png" alt="" class="optionTip" style="width:2.08rem;height:.28rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_dog4.png" alt="" class="dog">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw104.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="4" onclick="toNext(4)">-->
+            <div class="next" data-id="4" onclick="toNext(4)"></div>
+        </div>
+        <div class="boy5 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_num5.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_title5.png" alt="" class="m_title5 title noImg">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_a.png" alt="" class="optionBtn" v-if="isBoy.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_5a.png" alt="" class="optionTip" style="width:2.66rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_b.png" alt="" class="optionBtn" v-if="isBoy.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_5b.png" alt="" class="optionTip" style="width:2.66rem;height:.28rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_dog5.png" alt="" class="dog">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw105.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="5" onclick="toNext(5)">-->
+            <div class="next" data-id="5" onclick="toNext(5)"></div>
+        </div>
+        <div class="boy6 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_num6.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_title6.png" alt="" class="m_title6 title noImg">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_a.png" alt="" class="optionBtn" v-if="isBoy.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_6a.png" alt="" class="optionTip" style="width:2.67rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_b.png" alt="" class="optionBtn" v-if="isBoy.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_6b.png" alt="" class="optionTip" style="width:1.16rem;height:.28rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_dog6.png" alt="" class="dog">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw106.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="6" onclick="toNext(6)">-->
+            <div class="next" data-id="6" onclick="toNext(6)"></div>
+        </div>
+        <div class="girlboy7 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_num7.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_title7.png" alt="" class="mw_title7 title noImg">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p7.png" alt="" class="mw_p7">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')" style="margin-top: 2rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_a.png" alt="" class="optionBtn" v-if="isBoy.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_7a.png" alt="" class="optionTip" style="width:.58rem;height:.29rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_b.png" alt="" class="optionBtn" v-if="isBoy.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_7b.png" alt="" class="optionTip" style="width:1.47rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionC options option11" @click="choice('C')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_c.png" alt="" class="optionBtn" v-if="isBoy.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_c.png" alt="" class="optionBtn" v-if="isBoy.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_7c.png" alt="" class="optionTip" style="width:1.16rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionD options option11" @click="choice('D')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_d.png" alt="" class="optionBtn" v-if="isBoy.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_d.png" alt="" class="optionBtn" v-if="isBoy.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_7d.png" alt="" class="optionTip" style="width:1.18rem;height:.29rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw107.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="7"  onclick="toNext(7)">-->
+            <div class="next" data-id="7" onclick="toNext(7)"></div>
+        </div>
+        <div class="girlboy8 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_num8.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_title8.png" alt="" class="mw_title8 title noImg">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p8.png" alt="" class="mw_p8">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')" style="margin-top: 2rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_a.png" alt="" class="optionBtn" v-if="isBoy.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_8a.png" alt="" class="optionTip" style="width:1.17rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_b.png" alt="" class="optionBtn" v-if="isBoy.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_8b.png" alt="" class="optionTip" style="width:1rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionC options option11" @click="choice('C')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_c.png" alt="" class="optionBtn" v-if="isBoy.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_c.png" alt="" class="optionBtn" v-if="isBoy.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_8c.png" alt="" class="optionTip" style="width:1rem;height:.28rem;left:.60rem;top:0">
+                </div>
+                <div class="optionD options option11" @click="choice('D')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_d.png" alt="" class="optionBtn" v-if="isBoy.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_d.png" alt="" class="optionBtn" v-if="isBoy.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_8d.png" alt="" class="optionTip" style="width:1rem;height:.29rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw108.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="8"  onclick="toNext(8)">-->
+            <div class="next" data-id="8" onclick="toNext(8)"></div>
+        </div>
+        <div class="girlboy9 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_num9.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_title9.png" alt="" class="mw_title9 title noImg">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p9.png" alt="" class="mw_p9">
+            <div class="option">
+                <div class="optionA options option11" @click="choice('A')" style="margin-top: 2.6rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'A'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_a.png" alt="" class="optionBtn" v-if="isBoy.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_9a.png" alt="" class="optionTip" style="width:3.86rem;height:.29rem;left:.60rem;top:0">
+                </div>
+                <div class="optionB options option11" @click="choice('B')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_b.png" alt="" class="optionBtn" v-if="isBoy.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_9b.png" alt="" class="optionTip" style="width:2.98rem;height:.29rem;left:.60rem;top:0">
+                </div>
+                <div class="optionC options option11" @click="choice('C')" style="margin-top: .15rem;margin-bottom: 0;">
+                    <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_pink.png" alt="" class="optionBg" v-if="option != 'B'">-->
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/one_y.png" alt="" class="optionBg1" v-if="isBoy.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_c.png" alt="" class="optionBtn" v-if="isBoy.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_c.png" alt="" class="optionBtn" v-if="isBoy.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_9c.png" alt="" class="optionTip" style="width:4.11rem;height:.22rem;left:.60rem;top:0">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw109.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/next.png" alt="" class="next" data-id="9"  onclick="toNext(9)">-->
+            <div class="next" data-id="9" onclick="toNext(9)"></div>
+        </div>
+        <div class="girlboy10 hide">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/bg0.png" alt="" class="bg0">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_num10.png" alt="" class="w_num1">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_title10.png" alt="" class="mw_title10 title noImg">
+            <div class="option">
+                <div class="optionA options" @click="choice('A')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_blue.png" alt="" class="optionBg" v-if="isBoy.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_a.png" alt="" class="optionBtn" v-if="isBoy.option != 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_a.png" alt="" class="optionBtn" v-if="isBoy.option == 'A'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p10a.png" alt="" class="optionTip" style="width:2.19rem;height:1.37rem;left:.20rem;top:.15rem">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_10a.png" alt="" class="option10Tip" style="width: 1.16rem;height: .28rem;left:.75rem;top: 1.9rem;">
+                </div>
+                <div class="optionB options" @click="choice('B')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_blue.png" alt="" class="optionBg" v-if="isBoy.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_b.png" alt="" class="optionBtn" v-if="isBoy.option != 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_b.png" alt="" class="optionBtn" v-if="isBoy.option == 'B'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p10b.png" alt="" class="optionTip" style="width:2.19rem;height:1.37rem;left:.20rem;top:.15rem">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_10b.png" alt="" class="option10Tip" style="width: 1.76rem;height: .28rem;left:.45rem;top: 1.9rem;">
+                </div>
+                <div class="optionC options" @click="choice('C')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_blue.png" alt="" class="optionBg" v-if="isBoy.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isBoy.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_c.png" alt="" class="optionBtn" v-if="isBoy.option != 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_c.png" alt="" class="optionBtn" v-if="isBoy.option == 'C'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p10c.png" alt="" class="optionTip" style="width:2.19rem;height:1.37rem;left:.20rem;top:.15rem">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_10c.png" alt="" class="option10Tip" style="width: 1.16rem;height: .28rem;left:.75rem;top: 1.9rem;">
+                </div>
+                <div class="optionD options" @click="choice('D')">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_blue.png" alt="" class="optionBg" v-if="isBoy.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more_y.png" alt="" class="optionBg" v-if="isBoy.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/blue_d.png" alt="" class="optionBtn" v-if="isBoy.option != 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/y_d.png" alt="" class="optionBtn" v-if="isBoy.option == 'D'">
+                    <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw_p10d.png" alt="" class="optionTip" style="width:2.19rem;height:1.37rem;left:.20rem;top:.15rem">
+                    <img src="http://p0.ifengimg.com/d27607d14a52d158/2018/19/mw_10D.png" alt="" class="option10Tip" style="width: 1.77rem;height: .28rem;left:.45rem;top: 1.9rem;">
+                </div>
+            </div>
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/mw1010.png" alt="" class="mwNum">
+            <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/result.png" alt="" class="next" data-id="10"  @click="toResult(10)">-->
+            <div class="next result" data-id="9"  @click="toResult(10)"></div>
+        </div>
+    </div>
+
+    <div class="page3" v-if="showResult">
+        <!--<img :src="isGirl.resultImg[0]" alt="" class="resultImg" v-if="isGirl.show0">-->
+        <!--<img :src="isGirl.resultImg[1]" alt="" class="resultImg" v-if="isGirl.show1">-->
+        <!--<img :src="isGirl.resultImg[2]" alt="" class="resultImg" v-if="isGirl.show2">-->
+        <!--<img :src="isGirl.resultImg[3]" alt="" class="resultImg" v-if="isGirl.show3">-->
+        <!--<img :src="isGirl.resultImg[4]" alt="" class="resultImg" v-if="isGirl.show4">-->
+        <!--<img :src="isGirl.resultImg[5]" alt="" class="resultImg" v-if="isGirl.show5">-->
+        <!--<img :src="isGirl.resultImg[6]" alt="" class="resultImg" v-if="isGirl.show6">-->
+        <!--<img :src="isGirl.resultImg[7]" alt="" class="resultImg" v-if="isGirl.show7">-->
+        <!--<img :src="isGirl.resultImg[8]" alt="" class="resultImg" v-if="isGirl.show8">-->
+        <!--<img :src="isGirl.resultImg[9]" alt="" class="resultImg" v-if="isGirl.show9">-->
+
+        <!--<img :src="isBoy.resultImg[0]" alt="" class="resultImg" v-if="isBoy.show0">-->
+        <!--<img :src="isBoy.resultImg[1]" alt="" class="resultImg" v-if="isBoy.show1">-->
+        <!--<img :src="isBoy.resultImg[2]" alt="" class="resultImg" v-if="isBoy.show2">-->
+        <!--<img :src="isBoy.resultImg[3]" alt="" class="resultImg" v-if="isBoy.show3">-->
+        <!--<img :src="isBoy.resultImg[4]" alt="" class="resultImg" v-if="isBoy.show4">-->
+        <!--<img :src="isBoy.resultImg[5]" alt="" class="resultImg" v-if="isBoy.show5">-->
+        <!--<img :src="isBoy.resultImg[6]" alt="" class="resultImg" v-if="isBoy.show6">-->
+        <!--<img :src="isBoy.resultImg[7]" alt="" class="resultImg" v-if="isBoy.show7">-->
+        <!--<img :src="isBoy.resultImg[8]" alt="" class="resultImg" v-if="isBoy.show8">-->
+        <!--<img :src="isBoy.resultImg[9]" alt="" class="resultImg" v-if="isBoy.show9">-->
+
+        <span class="testName">${name}</span>
+        <div class="floatBtn" style="display: block;">
+            <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/resultTip.png" alt="" class="resultTip noImg">
+            <div class="resultbtn" style="display: block;">
+                <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/again.png" alt="" class="retest" @click="retest">
+                <img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/more.png" alt="" class="more">
+            </div>
+        </div>
+
+        <!--<img src="http://p2.ifengimg.com/d27607d14a52d158/2018/19/logo.png" alt="" class="logo" style="margin: 0 auto;">-->
+        <img src="" alt="" ref = "super" class="super">
+    </div>
+
+</div>
+<script src="http://p2.ifengimg.com/29b92e35b2b20708/2017/6/vue.min.js"></script>
+<script src="http://p0.ifengimg.com/d27607d14a52d158/2018/13/jquery-3.2.1.min.js"></script>
+<script src="http://p0.ifengimg.com/29b92e35b2b20708/2016/51/filter.js"></script>
+<script>
+    document.onreadystatechange = subSomething;//当页面加载状态改变的时候执行这个方法.
+    function subSomething() {
+        if(document.readyState == 'complete') { //当页面加载状态
+            setTimeout(function(){
+                $('.loading').hide();
+            },800);
+
+//            $('.page1').show();
+//            vm.ispage = true;
+        }
+    }
+    function toNext(num){
+        if(vm.sex == 'woman'){
+            if(vm.isGirl.option == ''){
+                alert('请做出选择')
+            }else{
+                $('.next').eq(num-1).parent().hide();
+                $('.next').eq(num).parent().show();
+
+                switch(vm.isGirl.option){
+                    case 'A': vm.isGirl.totalA++; console.log('A',vm.isGirl.totalA);break;
+                    case 'B': vm.isGirl.totalB++; console.log('B',vm.isGirl.totalB);break;
+                    case 'C': vm.isGirl.totalC++; console.log('C',vm.isGirl.totalC);break;
+                    case 'D': vm.isGirl.totalD++; console.log('D',vm.isGirl.totalD);break;
+                }
+
+                vm.isGirl.option = '';
+            }
+        }else if(vm.sex == 'man'){
+            if(vm.isBoy.option == ''){
+                alert('请做出选择')
+            }else{
+                $('.next').eq(num-1).parent().hide();
+                $('.next').eq(num).parent().show();
+
+                switch(vm.isBoy.option){
+                    case 'A': vm.isBoy.totalA++; console.log('A',vm.isBoy.totalA);break;
+                    case 'B': vm.isBoy.totalB++; console.log('B',vm.isBoy.totalB);break;
+                    case 'C': vm.isBoy.totalC++; console.log('C',vm.isBoy.totalC);break;
+                    case 'D': vm.isBoy.totalD++; console.log('D',vm.isBoy.totalD);break;
+                }
+
+                vm.isBoy.option = '';
+            }
+        }
+    }
+
+    var vm = new Vue({
+        el: '.box',
+        delimiters: [ '${','}'],
+        data: {
+            ispage: true,
+            showResult: false,
+            sex: 'man',
+            nowResult: '',
+            isGirl: {
+                option: '',
+                totalA: 0,
+                totalB: 0,
+                totalC: 0,
+                totalD: 0,
+//                resultImg: [
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_result1.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_result2.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_result3.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_result4.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_result5.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_result6.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_result7.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_result8.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_result9.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/w_result10.png'
+//                ],
+//                show0: false,
+//                show1: false,
+//                show2: false,
+//                show3: false,
+//                show4: false,
+//                show5: false,
+//                show6: false,
+//                show7: false,
+//                show8: false,
+//                show9: false
+            },
+            isBoy:{
+                option: '',
+                totalA: 0,
+                totalB: 0,
+                totalC: 0,
+                totalD: 0,
+//                show0: false,
+//                show1: false,
+//                show2: false,
+//                show3: false,
+//                show4: false,
+//                show5: false,
+//                show6: false,
+//                show7: false,
+//                show8: false,
+//                show9: false,
+//                resultImg: [
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_result1.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_result2.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_result3.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_result4.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_result5.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_result6.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_result7.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_result8.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_result9.png',
+//                    'http://p2.ifengimg.com/d27607d14a52d158/2018/19/m_result10.png'
+//                ]
+            },
+            name: '',
+            isShowInput: true,
+            girl: false,
+            boy: false,
+            num:0,
+            active:0,
+            prefix:'http://p2.ifengimg.com/d27607d14a52d158/2018/19/',
+            hotCode2:[
+                [
+                    {'img':'w_down0.png','openImg':'open1.png','title':'风趣幽默','icon':'icon-01.jpg'},
+                    {'img':'w_down1.png','openImg':'open2.png','title':'沉着理性','icon':'icon-02.jpg'},
+                    {'img':'w_down2.png','openImg':'open3.png','title':'才华横溢','icon':'icon-03.jpg'},
+                    {'img':'w_down3.png','openImg':'open4.png','title':'霸道总裁','icon':'icon-04.jpg'},
+                    {'img':'w_down4.png','openImg':'open5.png','title':'温柔细心','icon':'icon-05.jpg'},
+                    {'img':'w_down5.png','openImg':'open5.png','title':'率直感性','icon':'icon-05.jpg'},
+                    {'img':'w_down6.png','openImg':'open5.png','title':'固执敏感','icon':'icon-05.jpg'},
+                    {'img':'w_down7.png','openImg':'open5.png','title':'个性敏锐','icon':'icon-05.jpg'},
+                    {'img':'w_down8.png','openImg':'open5.png','title':'体贴入微','icon':'icon-05.jpg'},
+                    {'img':'w_down9.png','openImg':'open5.png','title':'性格稳健','icon':'icon-05.jpg'}
+                ],
+                [
+                    {'img':'m_down00.png','openImg':'open1.png','title':'敏感害羞','icon':'icon-01.jpg'},
+                    {'img':'m_down11.png','openImg':'open2.png','title':'撒娇','icon':'icon-02.jpg'},
+                    {'img':'m_down22.png','openImg':'open3.png','title':'阳光可爱','icon':'icon-03.jpg'},
+                    {'img':'m_down33.png','openImg':'open4.png','title':'清冷霸道','icon':'icon-04.jpg'},
+                    {'img':'m_down44.png','openImg':'open5.png','title':'随性洒脱','icon':'icon-05.jpg'},
+                    {'img':'m_down55.png','openImg':'open5.png','title':'聪明温柔','icon':'icon-05.jpg'},
+                    {'img':'m_down66.png','openImg':'open5.png','title':'性格独立','icon':'icon-05.jpg'},
+                    {'img':'m_down77.png','openImg':'open5.png','title':'外表出众','icon':'icon-05.jpg'},
+                    {'img':'m_down8.png','openImg':'open5.png','title':'第六感很强','icon':'icon-05.jpg'},
+                    {'img':'m_down99.png','openImg':'open5.png','title':'少女心','icon':'icon-05.jpg'}
+
+                ]
+            ],
+            arrShare:['好运连连','http://p3.ifengimg.com/a/2017/1229/icon-01.jpg']
+        },
+        mounted:function(){
+            this.resize()
+            //window.onresize = this.resize
+            //window.onorientationchange = this.resize;
+            window.addEventListener("touchmove", function (e) {e.preventDefault();},{ passive: false });
+            this.toResult();
+        },
+        methods: {
+            resize:function(e){
+                var _this = this;
+                _this.ua = navigator.userAgent.toLowerCase();
+                _this.isMobile = /ipad|iphone|ipod|ios|android|symbianos|windows phone|miuibrowser|meego|blackberry/i.test(_this.ua) || !!navigator.userAgent.match(/AppleWebKit.*Mobile.*/);
+                _this.isIos = /ipad|iphone|ipod|ios/i.test(_this.ua);
+                var setTime = 1000/60;
+                if(e&&e.type==='orientationchange')setTime = 500;
+                setTimeout(function () {
+                    _this.width = document.body.offsetWidth;
+                    _this.height = window.innerHeight;
+                    if (!_this.isMobile) {
+                        if (_this.width / _this.height < 750 / 1206){
+                            _this.height = _this.width / 750 * 1206;
+                            _this.scale = _this.height/window.innerHeight;
+                        }
+                        else {
+                            _this.width = _this.height / 1206 * 750;
+                            _this.scale = _this.width/document.body.offsetWidth;
+                        }
+                        _this.left = (window.innerWidth - _this.width) / 2;
+                        _this.bottom = (window.innerHeight - _this.height) / 2;
+
+                    }
+                    else {
+                        if (_this.width / _this.height < 750 / 1206){
+                            _this.height = _this.width / 750 * 1206;
+                            _this.scale = _this.height/window.innerHeight;
+                        }
+                        else {
+                            _this.width = _this.height / 1206 * 750;
+                            _this.scale = _this.width/document.body.offsetWidth;
+                        }
+                        _this.left = (window.innerWidth - _this.width) / 2;
+                        _this.bottom = (window.innerHeight - _this.height) / 2;
+                    }
+                    _this.fontSize = Math.round(_this.width / 750 * 100);
+                    document.documentElement.style.fontSize = _this.fontSize + 'px';
+                    $('.box').css('width',_this.width)
+                    $('.box').css('height',_this.height)
+                    $('.box').css('left',_this.left)
+                    //$('.box').css('bottom',_this.bottom)
+                    console.log()
+                },setTime);
+            },
+            choose: function (sex) {
+                this.sex = sex;
+            },
+            showInput: function () {
+                this.isShowInput = true;
+            },
+            checkName: function () {
+                if (!this.name) {
+                    alert('请输入你的名字');
+                    return
+                } else if (this.name.length > 4) {
+                    alert('名字不可超过4个字哦');
+                    return
+                }
+                var reg = new RegExp(KEYWORDS, "g");
+                if (reg.test(this.name)) {
+                    alert('你不能选' + this.name + '为名字');
+                } else {
+//                    this.girl1 = true;
+                    if (this.sex == 'woman') {
+                        this.ispage = false;
+                        this.girl = true;
+                        this.num = 0
+                    } else if (this.sex == 'man') {
+                        this.ispage = false;
+                        this.boy = true;
+                        this.num = 1
+                    }
+//                    if(isApps){
+//                        this.isShow4 = true;
+//                    }
+//                    this.getScript();
+                }
+            },
+            choice: function (option) {
+                if (this.sex == 'woman') {
+                    this.isGirl.option = option;
+
+                } else if (this.sex == 'man') {
+                    this.isBoy.option = option;
+//                    alert(this.isBoy.option);
+                }
+
+            },
+            toResult: function (num) {  //查看结果
+                var self = this;
+                if (this.sex == 'woman') {
+
+                    switch (this.isGirl.option) {
+                        case 'A':
+                            this.isGirl.totalA++;
+                            console.log('A', this.isGirl.totalA);
+                            break;
+                        case 'B':
+                            this.isGirl.totalB++;
+                            console.log('B', this.isGirl.totalB);
+                            break;
+                        case 'C':
+                            this.isGirl.totalC++;
+                            console.log('C', this.isGirl.totalC);
+                            break;
+                        case 'D':
+                            this.isGirl.totalD++;
+                            console.log('D', this.isGirl.totalD);
+                            break;
+                    }
+                    this.girl = false;
+                    this.showResult = true;
+
+                    console.log({
+                        'a': this.isGirl.totalA,
+                        'b': this.isGirl.totalB,
+                        'c': this.isGirl.totalC,
+                        'd': this.isGirl.totalD
+                    });
+
+                    if (this.isGirl.totalA == 5 || this.isGirl.totalB == 1) {
+                        this.isGirl.show0 = true;
+                        this.active = 0;
+                    } else if (this.isGirl.totalA == 4 || this.isGirl.totalB == 2) {
+                        this.isGirl.show1 = true;
+                        this.active = 1;
+                    } else if (this.isGirl.totalB == 5 || this.isGirl.totalC == 2) {
+                        this.isGirl.show2 = true;
+                        this.active = 2;
+                    } else if (this.isGirl.totalC == 4 || this.isGirl.totalA == 2) {
+                        this.isGirl.show3 = true;
+                        this.active = 3;
+                    } else if (this.isGirl.totalC == 4 || this.isGirl.totalD == 3) {
+                        this.isGirl.show4 = true;
+                        this.active = 4;
+                    } else if (this.isGirl.totalB == 4 || this.isGirl.totalA == 3) {
+                        this.isGirl.show5 = true;
+                        this.active = 5;
+                    } else if (this.isGirl.totalA == 4 || this.isGirl.totalB == 3) {
+                        this.isGirl.show6 = true;
+                        this.active = 6;
+                    } else if (this.isGirl.totalD == 4 || this.isGirl.totalC == 2) {
+                        this.isGirl.show7 = true;
+                        this.active = 7;
+                    } else if (this.isGirl.totalA == 3 || this.isGirl.totalB == 3) {
+                        this.isGirl.show8 = true;
+                        this.active = 8;
+                    } else if (this.isGirl.totalA == 6 || this.isGirl.totalC == 1) {
+                        this.isGirl.show9 = true;
+                        this.active = 9;
+                    }
+
+                } else if (this.sex == 'man') {
+                    switch (this.isBoy.option) {
+                        case 'A':
+                            this.isBoy.totalA++;
+                            console.log('A', this.isBoy.totalA);
+                            break;
+                        case 'B':
+                            this.isBoy.totalB++;
+                            console.log('B', this.isBoy.totalB);
+                            break;
+                        case 'C':
+                            this.isBoy.totalC++;
+                            console.log('C', this.isBoy.totalC);
+                            break;
+                        case 'D':
+                            this.isBoy.totalD++;
+                            console.log('D', this.isBoy.totalD);
+                            break;
+                    }
+                    this.boy = false;
+                    if (!this.ispage) {
+                        this.showResult = true;
+                    }
+                    console.log({
+                        'a': this.isBoy.totalA,
+                        'b': this.isBoy.totalB,
+                        'c': this.isBoy.totalC,
+                        'd': this.isBoy.totalD
+                    })
+                    if (this.isBoy.totalB == 5 || this.isBoy.totalA == 2) {
+                        this.isBoy.show0 = true;
+                        this.active = 0;
+                    } else if (this.isBoy.totalB == 5 || this.isBoy.totalC == 2) {
+                        this.isBoy.show1 = true;
+                        this.active = 1;
+                    } else if (this.isBoy.totalA == 4 || this.isBoy.totalB == 2) {
+                        this.isBoy.show2 = true;
+                        this.active = 2;
+                    } else if (this.isBoy.totalC == 3 || this.isBoy.totalA == 4) {
+                        this.isBoy.show3 = true;
+                        this.active = 3;
+                    } else if (this.isBoy.totalC == 4 || this.isBoy.totalD == 3) {
+                        this.isBoy.show4 = true;
+                        this.active = 4;
+                    } else if (this.isBoy.totalB == 4 || this.isBoy.totalA == 3) {
+                        this.isBoy.show5 = true;
+                        this.active = 5;
+                    } else if (this.isBoy.totalA == 4 || this.isBoy.totalB == 3) {
+                        this.isBoy.show6 = true;
+                        this.active = 6;
+                    } else if (this.isBoy.totalD == 5 || this.isBoy.totalC == 2) {
+                        this.isBoy.show7 = true;
+                        this.active = 7;
+                    } else if (this.isBoy.totalA == 3 || this.isBoy.totalB == 3) {
+                        this.isBoy.show8 = true;
+                        this.active = 8;
+                    } else if (this.isBoy.totalA == 6 || this.isBoy.totalC == 1) {
+                        this.isBoy.show9 = true;
+                        this.active = 9;
+                    }
+                }
+                this.makePic();
+            },
+            retest: function () {
+                this.ispage = true;
+                this.showResult = false;
+                this.sex = 'man';
+                this.isGirl.option = '';
+                this.isGirl.totalA = 0;
+                this.isGirl.totalB = 0;
+                this.isGirl.totalC = 0;
+                this.isGirl.totalD = 0;
+                this.isGirl.show0 = false;
+                this.isGirl.show1 = false;
+                this.isGirl.show2 = false;
+                this.isGirl.show3 = false;
+                this.isGirl.show4 = false;
+                this.isGirl.show5 = false;
+                this.isGirl.show6 = false;
+                this.isGirl.show7 = false;
+                this.isGirl.show8 = false;
+                this.isGirl.show9 = false;
+
+                this.isBoy.option = '';
+                this.isBoy.totalA = 0;
+                this.isBoy.totalB = 0;
+                this.isBoy.totalC = 0;
+                this.isBoy.totalD = 0;
+                this.isBoy.show0 = false;
+                this.isBoy.show1 = false;
+                this.isBoy.show2 = false;
+                this.isBoy.show3 = false;
+                this.isBoy.show4 = false;
+                this.isBoy.show5 = false;
+                this.isBoy.show6 = false;
+                this.isBoy.show7 = false;
+                this.isBoy.show8 = false;
+                this.isBoy.show9 = false;
+
+                this.name = '';
+                this.isShowInput = true;
+                this.girl = false;
+                this.boy = false;
+                this.num = 0;
+                this.active = 0;
+            },
+            makePic: function () {
+//                this.show = 'page1'
+                console.log('num',this.num);
+                console.log('active',this.active);
+                console.log('111',this.hotCode2[this.num][this.active].img);
+                var ary = [this.prefix + this.hotCode2[this.num][this.active].img];
+
+//                this.arrShare[0] = this.hotCode2[this.num][this.active].title;
+//                this.arrShare[1] = this.prefix + this.hotCode2[this.num][this.active].icon
+//                this.getWeiXin();
+                var oImg = new Image();
+                ary.forEach(function (item, index) {
+                    var oImg = new Image();
+                    oImg.src = ary[index];
+                    oImg.onload = load;
+                })
+                var num = 0;
+                var self = this;
+
+                function load() {
+                    num++
+                    self.loadNum = parseInt(num / ary.length * 100) + "%";
+                    if (num == ary.length) {
+//                        self.showResult = true;
+                        self.$nextTick(function () {
+                            self.$refs.super.setAttribute('src', ary[0])
+
+                        })
+                    }
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>​
